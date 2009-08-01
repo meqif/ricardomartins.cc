@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<title>{{ page.title }}</title>
+	<link rel="stylesheet" type="text/css" href="/css/reset.css" charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="/css/prettify.css" charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="/css/stylesheet.css" charset="utf-8">
+	<link rel="alternate" type="application/atom+xml" title="Ricardo Martins' web place" href="/atom.xml" />
+</head>
+<body>
+
+<div id="page-wrapper">
+
+	<div id="site-title">
+		<a href="/">Ricardo Martins</a>
+		<span class="blurb">on software and madness</span>
+	</div>
+	<div id="navlist-wrapper">
+		<ul id="navlist">
+			<!--><li><a href="/tags">tags</a></li>-->
+			<li><a href="/">archive</a></li>
+			<li><a id="about-toggle" href="#">about</a></li>
+		</ul>
+	</div>
+
+	<div id="about" style="display:none">
+		<img src="/images/me.jpg">
+		<div id="about-text">
+			<p>I'm currently in my third year of Computer Science at <a href="http://www.di.fct.unl.pt">Faculdade de Ciências e Tecnologia &mdash; Universidade Nova de Lisboa.</a></p>
+			<p>You can also find me at <a href="http://twitter.com/meqif">twitter</a>, <a href="http://identi.ca/meqif">identi.ca</a>, <a href="http://delicious.com/meqif">del.icio.us, <a href="http://flickr.com/ricardo_martins">flickr</a>, <a href="http://www.librarything.com/profile/meqif">librarything</a>, <a href="http://www.last.fm/user/Meqif">last.fm</a>, <a href="http://friendfeed.com/meqif">friendfeed</a>, <a href="http://www.dopplr.com/traveller/meqif">dopplr</a>, and <a href="http://www.linkedin.com/in/ricardompm">linkedin</a>.</p>
+			<p>When I'm not reading, I'm probably writing code. Most can be found at <a href="http://github.com/meqif">github</a>.</p>
+			<p>I'm currently developing for the Nintendo DS as a hobby, which I'd like to do full time.</p>
+			<p>You should probably take a look at my <a href="/resume.html">resume</a> if you're interested in hiring me.</p>
+		</div>
+	</div>
+
+	{{ content }}
+
+</div>
+
+</div>
+
+
+	<div id="footer">
+		<div id="links">
+			<p>
+				<a href="http://twitter.com/meqif">twitter.com/meqif</a>
+				<br />
+				<a href="http://flickr.com/ricardo_martins">flickr.com/ricardo_martins</a>
+				<br />
+				<a href="http://github.com/meqif">github.com/meqif</a>
+			</p>
+		</div>
+		<div id="rss">
+			<p>
+				<a href="/atom.xml"><img src="/images/feed_icon.png"></a>
+			</p>
+		</div>
+	</div>
+
+<script type="text/javascript">
+//<![CDATA[
+(function() {
+		var links = document.getElementsByTagName('a');
+		var query = '?';
+		for(var i = 0; i < links.length; i++) {
+			if(links[i].href.indexOf('#disqus_thread') >= 0) {
+				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+			}
+		}
+		document.write('<script type="text/javascript" src="http://disqus.com/forums/scarybox/get_num_replies.js' + query + '"></' + 'script>');
+	})();
+//]]>
+</script>
+
+<script type="text/javascript" src="/js/prettify.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+	// google-code-prettify
+	prettyPrint();
+
+	$('a#about-toggle').click(function() {
+		$('#about').slideToggle(400);
+		return false;
+	});
+});
+</script>
+
+</body>
+</html>

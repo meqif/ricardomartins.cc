@@ -1,0 +1,27 @@
+---
+layout: post
+title: "NDS adventures: code for clearing the screen background"
+tags:
+- code
+- omg
+---
+
+I've been getting my feet wet with developing for the Nintendo DS. While I can't afford the official <abbr title="Software Development Kit">SDK</abbr> (nor would they sell it to me, a lowly student with no intention to sell games yet), I installed "devkitARM":http://www.devkitpro.org/, an unofficial <abbr title="Software Development Kit">SDK</abbr> developed by "amateurs".
+
+h2. Down to the basics
+
+First things first, I wanted to learn how to clear the screen (actually, there are two screens in the <abbr title="Nintendo DS">NDS</abbr>, but let's leave that aside for now).
+
+Actually, there are several ways to clear to background or, better said, painting it black.
+One way is iterating over each pixel in the display buffer (<code>BG_BMP_RAM_SUB</code>) and setting it's color as black (RGB 0,0,0).
+
+<pre class='prettyprint'>/* Clears the background of the sub screen. */
+void clearBottomScreen()
+{
+    u16* video_buffer_main = (u16*)BG_BMP_RAM_SUB(0);
+    int i;
+    for (i = 0; i < SCREEN_HEIGHT*SCREEN_WIDTH; i++)
+        video_buffer_main[i] = RGB15(0,0,0);
+}</pre>
+
+One other way I read somewhere and which is surely more efficient involves doing something similar over DMA transfers, painting much more than a pixel at a time. I shall investigate this.

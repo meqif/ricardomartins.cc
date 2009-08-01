@@ -1,0 +1,5 @@
+markdown: rdiscount
+pygments: true
+haml: true
+post_defaults:
+  layout: post
