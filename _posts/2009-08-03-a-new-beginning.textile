@@ -1,0 +1,16 @@
+---
+layout: post
+title: "A new beginning"
+tags:
+- random
+---
+
+In another treacherous act of blogginess, I nuked my tumblelog and started using "Jekyll":http://github.com/mojombo/jekyll/tree/master (a static site generator in Ruby). Actually, I'm using a "fork":http://github.com/henrik/jekyll/tree/master created by "Henrik Nyh":http://henrik.nyh.se that adds support for "Haml":http://haml-lang.com/ (for templates) and a few other niceties.
+
+The reason for this was, since my blog tends to be quite static, it doesn't make much sense to use a full blown dynamic CMS like "Wordpress":http://www.wordpress.org or "Typo":http://wiki.github.com/fdv/typo/, or even a custom one powered by Django, like I had once, PLUS a database for my posts PLUS caching, if I don't want a slow site. Isn't this too much overhead just for a tiny blog? And migrating posts between those systems is a pain in the neck. The only truly dynamic part of my blog are the comments, and those are handled very well by "Disqus":http://www.disqus.com.
+
+In Jekyll, posts are plain text files, using whatever markup you like (I use Textile, but you can use Markdown too, or any other filter if you fork the source). You edit them in your favourite text editor (I'm using TextMate right now), then invoke @jekyll@ in the root directory of your blog and presto, your static blog is generated! Then it's just a matter of uploading the files to your hosting provider and you're done.
+
+Another cool thing is, this way I can easily back up and keep track of changes in my blog by using git and a repository somewhere (I like "github":http://github.com).
+
+Oh, another thing: I'm redirecting scarybox.net to ricardomartins.cc. There was too much overlap between them to justify the separate existence of both at the moment. Don't worry, scarybox won't die anytime soon, it's time will soon come, rising as the sinister "scarybox project"! @<insert mad cackling>@
