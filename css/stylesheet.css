@@ -235,30 +235,6 @@ object {
 	float: right;
 }
 
-/* Disqus stuff */
-/*
-.dsq-comment a:hover {
-	background-color: #3875d7 !important;
-	color: #f0f0f0 !important;
-}
-
-#dsq-content h3 {
-	font-size: 1.2em;
-}
-
-#dsq-add-new-comment {
-	padding-bottom: 1.5em;
-}
-
-#dsq-comments-count {
-	padding-top: 1.5em;
-}
-
-#dsq-content #dsq-comments {
-	font-size: 1.1em;
-}
-*/
-
 #home {text-align:justify; width: 730px; padding: 10px; margin-top:20px;}
 
 
