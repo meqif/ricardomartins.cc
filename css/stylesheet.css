@@ -131,6 +131,7 @@ object {
 
 #about {
     margin-top: 0px;
+    margin-bottom: -0.5em;
 }
 /* Text that appears in the site about link */
 #about-text {
