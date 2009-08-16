@@ -30,7 +30,7 @@
 		</ul>
 	</div>
 
-	<div id="about" style="display:none">
+	<div id="about" style="display:{% if page.url == "" %}block{% else %}none{% endif %}">
 		<img src="/images/me.jpg" alt="Me!" title="Hello there!"/>
 		<div id="about-text">
 			<p>Hello there! My name is Ricardo Martins and I'm currently in my third year of Computer Science at <a href="http://www.di.fct.unl.pt">Faculdade de Ciências e Tecnologia &mdash; Universidade Nova de Lisboa.</a></p>
