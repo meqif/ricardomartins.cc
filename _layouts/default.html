@@ -10,7 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="/css/stylesheet.min.css"/>
 	<link rel="alternate" type="application/atom+xml" title="Ricardo Martins' web place" href="/atom.xml"/>
 	<meta name="author" content="Ricardo Martins" />
-	<meta name="description" content="Ricardo Martins' online home" />
+	<meta name="description" content="Ricardo Martins{% if page.url == "" %}' online home{% else %} - {{ page.title }}{% endif %}" />
 </head>
 <body>
 
@@ -22,9 +22,6 @@
 	</div>
 	<div id="navlist-wrapper">
 		<ul id="navlist">
-			<!--
-			<li><a href="/tags">tags</a></li>
-			-->
 			<li><a href="/">archive</a></li>
 			<li><a id="about-toggle" href="#">about</a></li>
 		</ul>
