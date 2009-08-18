@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+echo "--- Generating site ---"
+jekyll && cp .htstatic _site/
+echo "--- Compressing static files ---"
+find _site \( -name "*.html" -o -name "*.js" -o -name "*.css" -o -name "*.xml" \) -type f -exec /bin/sh -c "gzip -9 -c '{}' > '{}.gz'" \;
+echo "--- Uploading site ---"
+rsync -avz --delete _site/ ricardomartins.cc:/home/public/
