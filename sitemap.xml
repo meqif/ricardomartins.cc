@@ -6,15 +6,15 @@ layout: nil
 	xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-			http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">	
-  
+			http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
   <url>
 		<loc>http://ricardomartins.cc</loc>
 		<lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>1.00</priority>
 	</url>
-	
+
 	<url>
 		<loc>http://ricardomartins.cc/resume.html</loc>
 		<priority>0.80</priority>
@@ -22,7 +22,7 @@ layout: nil
 	{% for post in site.posts %}
 	<url>
 		<loc>http://ricardomartins.cc/{{ post.url }}/</loc>
-		<lastmod>{{ site.time }}</lastmod>
+		<lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
 		<changefreq>monthly</changefreq>
 		<priority>0.80</priority>
 	</url>
