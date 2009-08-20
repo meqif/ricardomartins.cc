@@ -77,7 +77,7 @@ object {
 
 /* Defines the white box where content lies */
 /* Also defines the hidden div holding the archive content retrieve with jQuery on demand */
-#contents, #archive, #about, #topics, #home {
+#contents, #archive, #about, #topics, #home, #comments {
 	margin-top: 20px;
 	margin-bottom: 10px;
 	padding: 10px;
