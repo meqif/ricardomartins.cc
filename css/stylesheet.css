@@ -116,19 +116,6 @@ object {
 	margin-right: auto;
 }
 
-/* Separator between posts on the index page */
-#separator {
-	border-top: solid #ccc;
-	margin-top: 2em;
-	margin-bottom: 2em;
-}
-
-/* Separator between topics on the index page */
-#separator-blank {
-	margin-top: 2em;
-}
-
-
 #about {
     margin-top: 0px;
     margin-bottom: -0.5em;
@@ -259,7 +246,6 @@ ul.posts li strong.date { color: #888; margin-right: 5px; }
 .atn { color: #606; }
 .atv { color: #080; }
 .dec { color: #606; }
-pre.prettyprint { padding: 10px; }
 
 @media print {
   .str { color: #060; }
