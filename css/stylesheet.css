@@ -67,12 +67,8 @@ blockquote {
 	margin-left: 1em;
 }
 
-/* Embedded videos */
-object {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 1.5em;
+#page-wrapper {
+    background: #FFF;
 }
 
 /* Defines the white box where content lies */
