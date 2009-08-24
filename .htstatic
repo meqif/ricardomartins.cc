@@ -2,14 +2,14 @@
   ExpiresActive On
   ExpiresDefault "access plus 1 seconds"
   ExpiresByType text/html "access plus 3600 seconds"
-  ExpiresByType image/gif "access plus 2592000 seconds"
-  ExpiresByType image/jpeg "access plus 2592000 seconds"
-  ExpiresByType image/png "access plus 2592000 seconds"
-  ExpiresByType image/x-icon "access plus 31104000 seconds"
-  ExpiresByType text/css "access plus 604800 seconds"
-  ExpiresByType text/javascript "access plus 216000 seconds"
-  ExpiresByType application/x-javascript "access plus 216000 seconds"
-  ExpiresByType application/javascript "access plus 216000 seconds"
+  ExpiresByType image/gif "access plus 1 months"
+  ExpiresByType image/jpeg "access plus 1 months"
+  ExpiresByType image/png "access plus 1 months"
+  ExpiresByType image/x-icon "access plus 1 years"
+  ExpiresByType text/css "access plus 1 weeks"
+  ExpiresByType text/javascript "access plus 1 months"
+  ExpiresByType application/x-javascript "access plus 1 months"
+  ExpiresByType application/javascript "access plus 1 months"
 </ifModule>
 
 <ifModule mod_headers.c>
