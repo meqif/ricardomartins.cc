@@ -8,6 +8,7 @@
 	<link rel="openid.delegate" href="http://meqif.myopenid.com"/>
 	<link rel="stylesheet" type="text/css" href="/css/reset.css"/>
 	<link rel="stylesheet" type="text/css" href="/css/stylesheet.min.css"/>
+	<link rel="stylesheet" type="text/css" href="/js/fancybox/jquery.fancybox.min.css"/>
 	<link rel="alternate" type="application/atom+xml" title="Ricardo Martins' web place" href="/atom.xml"/>
 	<meta name="author" content="Ricardo Martins" />
 	<meta name="description" content="Ricardo Martins{% if page.url == "" %}' online home{% else %} - {{ page.title }}{% endif %}" />
@@ -35,7 +36,7 @@
 	</div>
 
 	<div id="about" style="display:{% if page.url == "" %}block{% else %}none{% endif %}">
-		<img src="/images/me.jpg" alt="Me!" title="Hello there!"/>
+		<a href="http://farm4.static.flickr.com/3561/3780458415_12fa31050f_b.jpg" class="lightbox"><img src="/images/me.jpg" alt="Me!" title="Hello there!"/></a>
 		<div id="about-text">
 			<p>Hello there! My name is Ricardo Martins and I'm currently in my third year of Computer Science at <a href="http://www.di.fct.unl.pt">Faculdade de Ciências e Tecnologia &mdash; Universidade Nova de Lisboa.</a></p>
 			<p>You can also find me at <a href="http://twitter.com/meqif" rel="me">twitter</a>, <a href="http://identi.ca/meqif" rel="me">identi.ca</a>, <a href="http://delicious.com/meqif" rel="me">del.icio.us</a>, <a href="http://flickr.com/ricardo_martins" rel="me">flickr</a>, <a href="http://www.librarything.com/profile/meqif" rel="me">librarything</a>, <a href="http://www.last.fm/user/Meqif" rel="me">last.fm</a>, <a href="http://friendfeed.com/meqif" rel="me">friendfeed</a>, <a href="http://www.dopplr.com/traveller/meqif" rel="me">dopplr</a>, and <a href="http://www.linkedin.com/in/ricardompm" rel="me">linkedin</a>.</p>
@@ -81,6 +82,7 @@
 {% endif %}
 <script type="text/javascript" src="/js/prettify.min.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript" src="/js/fancybox/jquery.fancybox-1.2.1.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function() {
 	// google-code-prettify
@@ -90,6 +92,8 @@ $(document).ready(function() {
 		$('#about').slideToggle(400);
 		return false;
 	});
+
+	$("a.lightbox").fancybox();
 });
 </script>
 
