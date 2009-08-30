@@ -1,6 +1,4 @@
 body {
-	/* background-color: #f0f0f0;*/
-	text-align: center;
 	width: 750px;
 	padding-top: 20px;
 	margin-right:auto;
@@ -80,7 +78,6 @@ blockquote {
 	background-color: #FFF;
 	width: 730px;
 	text-align: justify;
-	float: left;
 }
 
 /* Enumerated lists in contents */
@@ -189,13 +186,19 @@ blockquote {
 /* Footer */
 #footer {
 	text-align: left;
-	padding: 10px;
+/*	padding: 10px; */
 	font-size: 0.8em;
+	border-top: medium solid #CCC;
 }
 
 #footer #links {
 	float: left;
-	margin-bottom: 2em;
+	margin-left: 2em;
+/*	margin-bottom: 2em; */
+}
+
+#footer #contact {
+    float: left;
 }
 
 #footer #rss {
