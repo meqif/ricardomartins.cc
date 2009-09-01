@@ -8,7 +8,7 @@ tags:
 
 Among the many under the hood improvements included in the latest OSX version (10.6 -- Snow Leopard, for those who've been under a rock the last few months), there's an unexpected and _unpleasant_ (at least for me) surprise: now Finder uses base 10 to calculate disk and file sizes, instead of the base 2 _de facto_ standard.
 
-Apparently, the motive behind this is to avoid the consumers feeling cheated when they buy an allegedly 1TB hard drive and find out it really is a 953GB drive. Meanwhile, the RAM size is still reported according to the supposedly old and deprecated base 2 representation. I love consistency.
+Apparently, the motive behind this is to avoid the consumers feeling cheated when they buy an allegedly 1TB hard drive and find out it really is a -953GB- 931GB drive. Meanwhile, the RAM size is still reported according to the supposedly old and deprecated base 2 representation. I love consistency.
 
 This all stems from one very simple fact: hard drive manufacturers have been maliciously marketing their hard drives' capacities in base 10 since the 90's, since it's more profitable to sell a 100 &times; 10^9 byte hard drive as a 100GB drive instead of a 100 &times; 2^30 byte drive, since the latter would be more expensive to manufacture.
 
