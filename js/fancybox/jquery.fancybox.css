@@ -135,7 +135,7 @@ a#fancy_left, a#fancy_right {
 	cursor: pointer;
 	z-index: 111; 
 	display: none;
-	background-image: url(data:image/gif;base64,AAAA);
+	background-image: url("data:image/gif;base64,AAAA");
 	outline: none;
 }
 
