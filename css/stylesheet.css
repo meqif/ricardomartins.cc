@@ -98,7 +98,7 @@ blockquote {
 	margin-left: 2.5em;
 }
 
-#contents ul li, #contents ol li {
+#contents li {
 	padding-left: 1em;
 }
 
@@ -138,7 +138,7 @@ blockquote {
 	float: left;
 	border: solid #ccc;
 	margin-right: 0.5em;
-        margin-top: 0.5em;
+	margin-top: 0.5em;
 }
 
 #related, #comments {
@@ -191,21 +191,21 @@ blockquote {
 	border-top: medium solid #CCC;
 }
 
-#footer #links {
+#links {
 	float: left;
 	margin-left: 2em;
 /*	margin-bottom: 2em; */
 }
 
-#footer #contact {
+#contact {
     float: left;
 }
 
-#footer #rss {
+#rss {
 	float: right;
 }
 
-#footer #rss a:hover {
+#rss a:hover {
 	background-color: transparent;
 }
 
@@ -227,10 +227,9 @@ div.year:last-child { margin-bottom: 0; }
 div.year h2.year { color: #888; float: left; margin: 0.2em 0 0 -3em; font-size: 250%; }
 div.year h3.month, div.year h2.tag { margin-top: 0; }
 
-ul.posts { list-style-type: none; margin-bottom: 2em; }
-ul.posts li { line-height: 1.75em; }
-ul.posts li strong.date { color: #888; margin-right: 5px; }
-.tag ul.posts li strong.date { width: 6.5em; display: inline-block; text-align: right; }
+.posts { list-style-type: none; margin-bottom: 2em; }
+.posts li { line-height: 1.75em; }
+.posts li strong.date { color: #888; margin-right: 5px; }
 
 /* Pretty printing styles. Used with prettify.js. */
 
