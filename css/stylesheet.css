@@ -71,7 +71,7 @@ blockquote {
 
 /* Defines the white box where content lies */
 /* Also defines the hidden div holding the archive content retrieve with jQuery on demand */
-#contents, #archive, #about, #topics, #home, #comments {
+#contents, #about, #home, #comments {
 	margin-top: 20px;
 	margin-bottom: 10px;
 	padding: 10px;
@@ -119,16 +119,6 @@ blockquote {
 
 	text-align: justify;
 	color: #000;
-}
-
-/* Text that appears in the site archive and topic links */
-#archive ul, #topics ul {
-	margin-top: 1.5em;
-	font-size: 0.8em;
-}
-
-#archive .date, #topics .date {
-	color: #aaa;
 }
 
 #about p { margin-top:0.5em;}
