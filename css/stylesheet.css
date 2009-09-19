@@ -1,9 +1,8 @@
 body {
-	width: 750px;
-	padding-top: 20px;
+	width: 770px;
 	margin-right:auto;
 	margin-left:auto;
-	border-top: solid #ccc;
+	background: #e9e9e9;
 
 	/* Fonts are defined once here and inherited by all */
 	font-family: "Helvetica Neue", Helvetica, Verdana, sans-serif;
@@ -66,18 +65,21 @@ blockquote {
 }
 
 #page-wrapper {
+    padding: 20px 10px 10px 10px;
     background: #FFF;
+    float:left;
+    width:750px;
+    border-top: solid #ccc;
 }
 
 /* Defines the white box where content lies */
 /* Also defines the hidden div holding the archive content retrieve with jQuery on demand */
 #contents, #about, #home, #comments {
 	margin-top: 20px;
-	margin-bottom: 10px;
-	padding: 10px;
+	padding: 10px 10px 0 10px;
 	background-color: #FFF;
-	width: 730px;
 	text-align: justify;
+	float:left;
 }
 
 /* Enumerated lists in contents */
@@ -131,10 +133,11 @@ blockquote {
 	margin-top: 0.5em;
 }
 
-#related, #comments {
+#comments {
 	margin-top: 1.5em;
 	padding-top: 1.5em;
-	border-top: solid #ccc;
+	border-top: medium dotted #ccc;
+	width: 730px;
 }
 
 /* Header */
@@ -163,6 +166,7 @@ blockquote {
 	padding-left: 10px;
 	font-weight: bold;
 	color: #000;
+	font-size: 1.2em;
 }
 
 #site-title a {
@@ -178,7 +182,9 @@ blockquote {
 	text-align: left;
 /*	padding: 10px; */
 	font-size: 0.8em;
-	border-top: medium solid #CCC;
+	border-top: medium dotted #CCC;
+	float: left;
+	width: 100%;
 }
 
 #links {

@@ -17,12 +17,6 @@
 
 <div id="page-wrapper">
 
-	{% if page.url != "" %}
-	<div style="position: fixed; top: 0px; left: 0px;z-index:-1;">
-		<img src="/images/mad_hatter.png"/>
-	</div>
-	{% endif %}
-
 	<div id="site-title">
 		<a href="/">Ricardo Martins</a>
 		<span class="blurb">on software and madness</span>
@@ -48,33 +42,34 @@
 
 	{{ content }}
 
+
+	<div id="footer">
+		<div id="contact">
+			<p>
+				Ricardo Martins
+				<br />
+				Computer Science Student
+				<br />
+				<a href="http://mailhide.recaptcha.net/d?k=01N86GeETDl_T3BFfSz_bhIg==&amp;c=sMQk9aPiKnri8XU2hStEeVu0OCs52lMb5p7eQnIJB40=" id="email" rel="me email">Email me!</a>
+			</p>
+		</div>
+		<div id="links">
+			<p>
+				<a href="http://twitter.com/meqif" rel="me">twitter.com/meqif</a>
+				<br />
+				<a href="http://flickr.com/ricardo_martins" rel="me">flickr.com/ricardo_martins</a>
+				<br />
+				<a href="http://github.com/meqif" rel="me">github.com/meqif</a>
+			</p>
+		</div>
+		<div id="rss">
+			<p>
+				<a href="/atom.xml"><img src="/images/feed_icon.png" width="64" height="64" alt="Atom Feed" title="Atom Feed"/></a>
+			</p>
+		</div>
+	</div>
 </div>
 
-<div id="footer">
-	<div id="contact">
-		<p>
-			Ricardo Martins
-			<br />
-			Computer Science Student
-			<br />
-			<a href="http://mailhide.recaptcha.net/d?k=01N86GeETDl_T3BFfSz_bhIg==&amp;c=sMQk9aPiKnri8XU2hStEeVu0OCs52lMb5p7eQnIJB40=" id="email" rel="me email">Email me!</a>
-		</p>
-	</div>
-	<div id="links">
-		<p>
-			<a href="http://twitter.com/meqif" rel="me">twitter.com/meqif</a>
-			<br />
-			<a href="http://flickr.com/ricardo_martins" rel="me">flickr.com/ricardo_martins</a>
-			<br />
-			<a href="http://github.com/meqif" rel="me">github.com/meqif</a>
-		</p>
-	</div>
-	<div id="rss">
-		<p>
-			<a href="/atom.xml"><img src="/images/feed_icon.png" width="64" height="64" alt="Atom Feed" title="Atom Feed"/></a>
-		</p>
-	</div>
-</div>
 {% if page.url != "" %}
 <script type="text/javascript">
 (function() {
