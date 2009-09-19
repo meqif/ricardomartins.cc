@@ -193,8 +193,14 @@ blockquote {
 /*	margin-bottom: 2em; */
 }
 
+#links img {
+    float:left;
+    margin-right:0.5em;
+}
+
 #contact {
     float: left;
+    width: 26%;
 }
 
 #rss {
