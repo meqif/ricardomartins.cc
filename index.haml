@@ -6,7 +6,7 @@ title: Ricardo Martins
 
   - site.collated_posts.sort.reverse.each do |year,months|
     .year
-      %h2.year= year
+      %h2(style="margin-top:0.2em; margin-bottom:0.5em; font-size:250%;")= year
       - months.sort.reverse.each do |month,days|
         %h3.month= Date::MONTHNAMES[month]
         %ul.posts

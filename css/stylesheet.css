@@ -80,6 +80,7 @@ blockquote {
 	background-color: #FFF;
 	text-align: justify;
 	float:left;
+	width: 730px;
 }
 
 /* Enumerated lists in contents */
