@@ -25,9 +25,12 @@ RewriteEngine On
 #RewriteCond %{HTTP_ACCEPT} application/xhtml\+xml
 #RewriteRule \.html$ - [T=application/xhtml+xml;charset=utf-8]
 
-Header add Vary accept-encoding 
-RewriteEngine on 
-RewriteCond %{HTTP:accept-encoding} gzip 
-RewriteCond %{REQUEST_FILENAME} !\.gz$ 
-RewriteCond %{REQUEST_FILENAME}.gz -f 
+Header add Vary accept-encoding
+RewriteEngine on
+RewriteCond %{HTTP:accept-encoding} gzip
+RewriteCond %{REQUEST_FILENAME} !\.gz$
+RewriteCond %{REQUEST_FILENAME}.gz -f
 RewriteRule (.*) $1.gz [L]
+
+RewriteCond %{HTTP_HOST} !^ricardomartins\.cc$
+RewriteRule (.*) http://ricardomartins.cc/$1 [R=301,L]
