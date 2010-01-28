@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 echo "--- Removing cruft ---"
 rm -r _site
+echo "--- Generating CSS ---"
+cd css && lessc stylesheet.less && java -jar ~/yuicompressor-2.4.2.jar --type css stylesheet.css > stylesheet.min.css && cd ..
 echo "--- Generating site ---"
 jekyll && cp .htstatic _site/
 echo "--- Compressing static files ---"
