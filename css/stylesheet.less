@@ -285,3 +285,33 @@ sup {
 sub {
 	top: .5ex;
 }
+
+#sidebar {
+	left: 0;
+	position: fixed;
+	top: 35%;
+}
+
+#sidebar a {
+	background: url("/images/feedback.png") no-repeat scroll 0 0 transparent;
+	display: block;
+	width: 30px;
+}
+
+#sidebar a.subscribe {
+	height: 105px;
+
+	:hover {
+	  background-position: -30px 0;
+	}
+}
+
+#sidebar a.top {
+	background-position: 0 -100px;
+	height: 61px;
+	margin-top: 5px;
+
+	:hover {
+	  background-position: -30px -100px;
+	}
+}
