@@ -241,40 +241,13 @@ div.year h3.month, div.year h2.tag { margin-top: 0; }
 .posts li { line-height: 1.75em; }
 .posts li strong.date { color: #888; margin-right: 5px; }
 
-/* Pretty printing styles. Used with prettify.js. */
-
-.str { color: #080; }
-.kwd { color: #008; }
-.com { color: #800; }
-.typ { color: #606; }
-.lit { color: #066; }
-.pun { color: #660; }
-.pln { color: #000; }
-.tag { color: #008; }
-.atn { color: #606; }
-.atv { color: #080; }
-.dec { color: #606; }
-
-@media print {
-  .str { color: #060; }
-  .kwd { color: #006; font-weight: bold; }
-  .com { color: #600; font-style: italic; }
-  .typ { color: #404; font-weight: bold; }
-  .lit { color: #044; }
-  .pun { color: #440; }
-  .pln { color: #000; }
-  .tag { color: #006; font-weight: bold; }
-  .atn { color: #404; }
-  .atv { color: #060; }
-}
-
 sup,
 sub {
 	font-size: 80%;
 	height: 0;
 	line-height: 1;
 	vertical-align: baseline;
-	_vertical-align: bottom;
+	/* _vertical-align: bottom; */ /* IE6 hack */
 	position: relative;
 }
 
@@ -319,3 +292,17 @@ sub {
 #tweetmeme {
   float:left; margin-right: 0.5em; padding:0; margin-bottom:-1em;
 }
+
+/* Pretty printing styles. Used with prettify.js. */
+
+.str { color: #080; }
+.kwd { color: #008; }
+.com { color: #800; }
+.typ { color: #606; }
+.lit { color: #066; }
+.pun { color: #660; }
+.pln { color: #000; }
+.tag { color: #008; }
+.atn { color: #606; }
+.atv { color: #080; }
+.dec { color: #606; }
