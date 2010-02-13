@@ -8,6 +8,7 @@
 	<link rel="openid.delegate" href="http://meqif.myopenid.com"/>
 	<link rel="stylesheet" type="text/css" href="/css/reset.css"/>
 	<link rel="stylesheet" type="text/css" href="/css/stylesheet.min.css"/>
+	<link rel="stylesheet" type="text/css" href="/css/fontface_stylesheet.css"/>
 	<link rel="alternate" type="application/atom+xml" title="Ricardo Martins' web place" href="/atom.xml"/>
 	<meta name="author" content="Ricardo Martins" />
 	<meta name="description" content="Ricardo Martins{% if page.url == "" %} is a Computer Science student at Faculdade de Ciências e Tecnologia - Universidade Nova de Lisboa.{% else %} - {{ page.title }}{% endif %}" />
@@ -23,8 +24,9 @@
 <div id="top"></div>
 <div id="page-wrapper">
 
+	<div id="header">
 	<div id="site-title">
-		<a href="/">Ricardo Martins</a>
+		<a href="/">Ricardo Martins</a><br/>
 		<span class="blurb">on software and madness</span>
 	</div>
 	<div id="navlist-wrapper">
@@ -32,6 +34,7 @@
 			<li><a href="/">archive</a></li>
 			<li><a id="about-toggle" href="#">about</a></li>
 		</ul>
+	</div>
 	</div>
 
 	<div id="about" style="display:{% if page.url == "" %}block{% else %}none{% endif %}">
