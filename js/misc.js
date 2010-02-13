@@ -17,7 +17,7 @@ $(document).ready(function() {
 		return false;
 	});
 
-	$("a.lightbox").fancybox();
+	//$("a.lightbox").fancybox();
 
 	var s1 = "&#122;&#110;&#118;&#121;&#103;&#98;&#58;";
 	var s2 = "&#101;&#118;&#112;&#110;&#101;&#113;&#98;";
