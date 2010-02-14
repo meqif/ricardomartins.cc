@@ -21,6 +21,22 @@
 </head>
 <body>
 
+<!-- Async Google Analytics -->
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-10241665-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+  })();
+
+</script>
+
 <div id="top"></div>
 <div id="page-wrapper">
 
@@ -101,12 +117,6 @@
 <script type="text/javascript" src="/js/prettify.min.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js"></script>
 <script type="text/javascript" src="/js/misc.min.js"></script>
-
-<script type="text/javascript">
-var domainy = location.protocol == "https:" ? "https://static.getclicky.com" : "http://static.getclicky.com";
-document.write(unescape("%3Cscript src='" + domainy + "/124525.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<noscript><p><img alt="Clicky" width="1" height="1" src="http://static.getclicky.com/124525-db16.gif" /></p></noscript>
 
 </body>
 </html>
