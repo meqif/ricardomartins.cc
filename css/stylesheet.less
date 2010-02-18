@@ -4,6 +4,16 @@
   border-radius: @radius;
 }
 
+.transform(@transf: none) {
+  -moz-transform: @transf;
+  -webkit-transform: @transf;
+}
+
+.box-shadow(@opts: none) {
+  -moz-box-shadow: @opts;
+  -webkit-box-shadow: @opts;
+}
+
 body {
 	width: 770px;
 	margin-right:auto;
