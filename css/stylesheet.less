@@ -309,18 +309,33 @@ sub {
 #header {padding-bottom: 1em; border-bottom: medium dotted #cccccc;}
 
 ul.gallery li a {
-  -moz-box-shadow: 0 2px 15px #333333;
+  .box-shadow(0 2px 10px #333333);
+  .transform(rotate(-3deg));
   float: left;
-  padding: 10px 10px 25px;
+  padding: 10px 10px 8px;
   position: relative;
   margin-right: 1em;
   margin-top: 0.5em;
   margin-bottom: 0.5em;
-  -moz-transform: rotate(-3deg);
+  display: inline;
+  text-align: center;
+  color: #000;
+  font-family: "Marker Felt", sans-serif;
+}
+
+ul.gallery img {
+  display: block;
+  margin-bottom: 7px;
+}
+
+ul.gallery a:after {
+  content: attr(title);
 }
 
 ul.gallery li a:hover {
-  -moz-transform: none;
+  .transform;
+  -webkit-transition: -webkit-transform .15s linear;
+  -moz-transition: -moz-transform .15s linear;
   background: transparent;
 }
 
