@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
-	<title>{{ page.title }}</title>
+	<title>A new beginning</title>
 	<link rel="me home" href="http://ricardomartins.cc/"/>
 	<link rel="openid.server" href="http://www.myopenid.com/server"/>
 	<link rel="openid.delegate" href="http://meqif.myopenid.com"/>
@@ -10,7 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="/css/stylesheet.min.css"/>
 	<link rel="alternate" type="application/atom+xml" title="Ricardo Martins' web place" href="/atom.xml"/>
 	<meta name="author" content="Ricardo Martins" />
-	<meta name="description" content="Ricardo Martins{% if page.url == "" %} is a Computer Science student at Faculdade de Ciências e Tecnologia - Universidade Nova de Lisboa.{% else %} - {{ page.title }}{% endif %}" />
+	<meta name="description" content="Ricardo Martins - A new beginning" />
 	<meta name="keywords" content="ricardo martins, portugal, computer science,computer scientist, software"/>
 	<meta name="viewport" content="width=808" />
 	<meta name="geo.placename" content="Caparica, Almada, Portugal" />
@@ -98,25 +98,31 @@
 	</div>
 	</div>
 
-	{% if page.url == "" %}
-	<div id="about">
-		<div style="float:left; padding: 10px 10px 1px 0;">
-			<a href="http://www.flickr.com/photos/ricardo_martins/4075304185/">
-				<img src="/images/me.jpg" width="200" height="130" alt="Me!"/>
-			</a>
-		</div>
+	
 
-		<div id="about-text">
-			<p>Hello there! My name is Ricardo Martins and I'm currently in my third year of Computer Science at <a href="http://www.di.fct.unl.pt">Faculdade de Ciências e Tecnologia &mdash; Universidade Nova de Lisboa.</a></p>
-			<p>You can also find me at <a href="http://twitter.com/meqif" rel="me">twitter</a>, <a href="http://identi.ca/meqif" rel="me">identi.ca</a>, <a href="http://delicious.com/meqif" rel="me">del.icio.us</a>, <a href="http://flickr.com/ricardo_martins" rel="me">flickr</a>, <a href="http://www.librarything.com/profile/meqif" rel="me">librarything</a>, <a href="http://www.last.fm/user/Meqif" rel="me">last.fm</a>, <a href="http://friendfeed.com/meqif" rel="me">friendfeed</a>, <a href="http://www.dopplr.com/traveller/meqif" rel="me">dopplr</a>, and <a href="http://www.linkedin.com/in/ricardompm" rel="me">linkedin</a>.</p>
-			<p>When I'm not reading, I'm probably writing code. Most can be found at <a href="http://github.com/meqif" rel="me">github</a>.</p>
-			<p>I'm currently developing for the Nintendo DS as a hobby, which I'd like to do full time.</p>
-			<p>You should probably take a look at my <a href="/resume.html" rel="me">resume</a> if you're interested in hiring me.</p>
-		</div>
-	</div>
-	{% endif %}
+	<div id="contents">
+<h2>A new beginning</h2>
+<span class="post-topics"><a href="#disqus_thread">comments</a> [ random  ]</span>
+<span class="blurb">03 August 2009</span>
+<br/>
+<script type="text/javascript">
+	tweetmeme_service = 'bit.ly';
+	tweetmeme_source = 'meqif';
+</script>
+<div id="tweetmeme"><p><script type="text/javascript" src="http://tweetmeme.com/i/scripts/button.js"></script></p></div>
+<p>In another treacherous act of blogginess, I nuked my tumblelog and started using <a href="http://github.com/mojombo/jekyll/tree/master">Jekyll</a> (a static site generator in Ruby). Actually, I&#8217;m using a <a href="http://github.com/henrik/jekyll/tree/master">fork</a> created by <a href="http://henrik.nyh.se">Henrik Nyh</a> that adds support for <a href="http://haml-lang.com/">Haml</a> (for templates) and a few other niceties.</p>
+<p>The reason for this was, since my blog tends to be quite static, it doesn&#8217;t make much sense to use a full blown dynamic <span class="caps">CMS</span> like <a href="http://www.wordpress.org">Wordpress</a> or <a href="http://wiki.github.com/fdv/typo/">Typo</a>, or even a custom one powered by Django, like I had once, <span class="caps">PLUS</span> a database for my posts <span class="caps">PLUS</span> caching, if I don&#8217;t want a slow site. Isn&#8217;t this too much overhead just for a tiny blog? And migrating posts between those systems is a pain in the neck. The only truly dynamic part of my blog are the comments, and those are handled very well by <a href="http://www.disqus.com">Disqus</a>.</p>
+<p>In Jekyll, posts are plain text files, using whatever markup you like (I use Textile, but you can use Markdown too, or any other filter if you fork the source). You edit them in your favourite text editor (I&#8217;m using TextMate right now), then invoke <code>jekyll</code> in the root directory of your blog and presto, your static blog is generated! Then it&#8217;s just a matter of uploading the files to your hosting provider and you&#8217;re done.</p>
+<p>Another cool thing is, this way I can easily back up and keep track of changes in my blog by using git and a repository somewhere (I like <a href="http://github.com">github</a>).</p>
+<p>Oh, another thing: I&#8217;m redirecting scarybox.net to ricardomartins.cc. There was too much overlap between them to justify the separate existence of both at the moment. Don&#8217;t worry, scarybox won&#8217;t die anytime soon, it&#8217;s time will soon come, rising as the sinister &#8220;scarybox project&#8221;! <code>&lt;insert mad cackling&gt;</code></p>
+</div>
 
-	{{ content }}
+<div id="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript" src="http://disqus.com/forums/scarybox/embed.js"></script>
+	<noscript><a href="http://scarybox.disqus.com/?url=ref">View the discussion thread.</a></noscript>
+</div>
+
 
 
 	<div id="footer">
@@ -138,7 +144,7 @@
 	</div>
 </div>
 
-{% if page.url != "" %}
+
 <script type="text/javascript">
 (function() {
 		var links = document.getElementsByTagName('a');
@@ -151,7 +157,7 @@
 		}
 	})();
 </script>
-{% endif %}
+
 <script type="text/javascript" src="/js/prettify.min.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 <script type="text/javascript" src="/js/misc.min.js"></script>

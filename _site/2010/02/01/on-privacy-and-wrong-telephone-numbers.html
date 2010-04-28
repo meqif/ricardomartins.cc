@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
-	<title>{{ page.title }}</title>
+	<title>On privacy and wrong telephone numbers</title>
 	<link rel="me home" href="http://ricardomartins.cc/"/>
 	<link rel="openid.server" href="http://www.myopenid.com/server"/>
 	<link rel="openid.delegate" href="http://meqif.myopenid.com"/>
@@ -10,7 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="/css/stylesheet.min.css"/>
 	<link rel="alternate" type="application/atom+xml" title="Ricardo Martins' web place" href="/atom.xml"/>
 	<meta name="author" content="Ricardo Martins" />
-	<meta name="description" content="Ricardo Martins{% if page.url == "" %} is a Computer Science student at Faculdade de Ciências e Tecnologia - Universidade Nova de Lisboa.{% else %} - {{ page.title }}{% endif %}" />
+	<meta name="description" content="Ricardo Martins - On privacy and wrong telephone numbers" />
 	<meta name="keywords" content="ricardo martins, portugal, computer science,computer scientist, software"/>
 	<meta name="viewport" content="width=808" />
 	<meta name="geo.placename" content="Caparica, Almada, Portugal" />
@@ -98,25 +98,34 @@
 	</div>
 	</div>
 
-	{% if page.url == "" %}
-	<div id="about">
-		<div style="float:left; padding: 10px 10px 1px 0;">
-			<a href="http://www.flickr.com/photos/ricardo_martins/4075304185/">
-				<img src="/images/me.jpg" width="200" height="130" alt="Me!"/>
-			</a>
-		</div>
+	
 
-		<div id="about-text">
-			<p>Hello there! My name is Ricardo Martins and I'm currently in my third year of Computer Science at <a href="http://www.di.fct.unl.pt">Faculdade de Ciências e Tecnologia &mdash; Universidade Nova de Lisboa.</a></p>
-			<p>You can also find me at <a href="http://twitter.com/meqif" rel="me">twitter</a>, <a href="http://identi.ca/meqif" rel="me">identi.ca</a>, <a href="http://delicious.com/meqif" rel="me">del.icio.us</a>, <a href="http://flickr.com/ricardo_martins" rel="me">flickr</a>, <a href="http://www.librarything.com/profile/meqif" rel="me">librarything</a>, <a href="http://www.last.fm/user/Meqif" rel="me">last.fm</a>, <a href="http://friendfeed.com/meqif" rel="me">friendfeed</a>, <a href="http://www.dopplr.com/traveller/meqif" rel="me">dopplr</a>, and <a href="http://www.linkedin.com/in/ricardompm" rel="me">linkedin</a>.</p>
-			<p>When I'm not reading, I'm probably writing code. Most can be found at <a href="http://github.com/meqif" rel="me">github</a>.</p>
-			<p>I'm currently developing for the Nintendo DS as a hobby, which I'd like to do full time.</p>
-			<p>You should probably take a look at my <a href="/resume.html" rel="me">resume</a> if you're interested in hiring me.</p>
-		</div>
-	</div>
-	{% endif %}
+	<div id="contents">
+<h2>On privacy and wrong telephone numbers</h2>
+<span class="post-topics"><a href="#disqus_thread">comments</a> [ privacy  ]</span>
+<span class="blurb">01 February 2010</span>
+<br/>
+<script type="text/javascript">
+	tweetmeme_service = 'bit.ly';
+	tweetmeme_source = 'meqif';
+</script>
+<div id="tweetmeme"><p><script type="text/javascript" src="http://tweetmeme.com/i/scripts/button.js"></script></p></div>
+<p>I just got scared out of my wits.</p>
+<p><a href="http://www.flickr.com/photos/phones/1640294230/"><img style="float:right; margin:0.5em" src="http://farm3.static.flickr.com/2078/1640294230_c87fb2f86d_m_d.jpg" /></a></p>
+<p>A man with the same first <em>and</em> last name as I called me home, saying he looked around the site [Which site!? My site!?] and wanted to order tickets for a show in London [<span class="caps">WHAT</span>!?]. He rambled on for a bit but I was too bewildered to pay much attention.</p>
+<p>When I expressed my confusion, he said he was sorry and &#8216;hung up&#8217;. Maybe he didn&#8217;t really put the receiver down or press the button well, because the call didn&#8217;t end.</p>
+<p>I didn&#8217;t hang up and kept listening. I know, it&#8217;s not nice to spy on people, but I was very unsettled by that call. After a little while, maybe ten seconds, I heard a woman in the background asking the man &#8220;How was it?&#8221; [The phone call? The prank?]. I suppose the man was also a bit confused as he took a few seconds to answer. He read a telephone number aloud and realized his mistake: he meant to call a ticket ordering service and got <strong>a digit</strong> wrong.</p>
+<p>This happened after a conversation about privacy (or rather, lack of it).</p>
+<p>Having a relatively common name and being paranoid about privacy sucks. Even moreso when people with the same name as you phone you home. As we say nowadays, I shat bricks<sup class="footnote"><a href="#fn1">1</a></sup>.</p>
+<p class="footnote" id="fn1"><sup>1</sup> A <a href="http://en.wikipedia.org/wiki/Dysphemism">dysphemism</a> meaning someone experienced a situation that caused a profound sentiment of fear or was very startled.</p>
+</div>
 
-	{{ content }}
+<div id="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript" src="http://disqus.com/forums/scarybox/embed.js"></script>
+	<noscript><a href="http://scarybox.disqus.com/?url=ref">View the discussion thread.</a></noscript>
+</div>
+
 
 
 	<div id="footer">
@@ -138,7 +147,7 @@
 	</div>
 </div>
 
-{% if page.url != "" %}
+
 <script type="text/javascript">
 (function() {
 		var links = document.getElementsByTagName('a');
@@ -151,7 +160,7 @@
 		}
 	})();
 </script>
-{% endif %}
+
 <script type="text/javascript" src="/js/prettify.min.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 <script type="text/javascript" src="/js/misc.min.js"></script>

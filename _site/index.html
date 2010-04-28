@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
-	<title>{{ page.title }}</title>
+	<title>Ricardo Martins</title>
 	<link rel="me home" href="http://ricardomartins.cc/"/>
 	<link rel="openid.server" href="http://www.myopenid.com/server"/>
 	<link rel="openid.delegate" href="http://meqif.myopenid.com"/>
@@ -10,7 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="/css/stylesheet.min.css"/>
 	<link rel="alternate" type="application/atom+xml" title="Ricardo Martins' web place" href="/atom.xml"/>
 	<meta name="author" content="Ricardo Martins" />
-	<meta name="description" content="Ricardo Martins{% if page.url == "" %} is a Computer Science student at Faculdade de Ciências e Tecnologia - Universidade Nova de Lisboa.{% else %} - {{ page.title }}{% endif %}" />
+	<meta name="description" content="Ricardo Martins is a Computer Science student at Faculdade de Ciências e Tecnologia - Universidade Nova de Lisboa." />
 	<meta name="keywords" content="ricardo martins, portugal, computer science,computer scientist, software"/>
 	<meta name="viewport" content="width=808" />
 	<meta name="geo.placename" content="Caparica, Almada, Portugal" />
@@ -98,7 +98,7 @@
 	</div>
 	</div>
 
-	{% if page.url == "" %}
+	
 	<div id="about">
 		<div style="float:left; padding: 10px 10px 1px 0;">
 			<a href="http://www.flickr.com/photos/ricardo_martins/4075304185/">
@@ -114,9 +114,56 @@
 			<p>You should probably take a look at my <a href="/resume.html" rel="me">resume</a> if you're interested in hiring me.</p>
 		</div>
 	</div>
-	{% endif %}
+	
 
-	{{ content }}
+	<div id="home">
+  <div class="year">
+    <h2 style="margin-top:0.2em; margin-bottom:0.5em; font-size:250%;">2010</h2>
+    <h3 class="month">April</h3>
+    <ul class="posts">
+      <li>
+        <strong class="date">15</strong>
+        <a href="/2010/04/15/extending-alfred.app-with-applescript.html">Extending Alfred.app with Applescript</a>
+      </li>
+    </ul>
+    <h3 class="month">February</h3>
+    <ul class="posts">
+      <li>
+        <strong class="date">01</strong>
+        <a href="/2010/02/01/on-privacy-and-wrong-telephone-numbers.html">On privacy and wrong telephone numbers</a>
+      </li>
+    </ul>
+  </div>
+  <div class="year">
+    <h2 style="margin-top:0.2em; margin-bottom:0.5em; font-size:250%;">2009</h2>
+    <h3 class="month">September</h3>
+    <ul class="posts">
+      <li>
+        <strong class="date">01</strong>
+        <a href="/2009/09/01/snow-leopard-calculates-disk-space-in-base-10.html">Snow Leopard calculates disk space in base 10</a>
+      </li>
+    </ul>
+    <h3 class="month">August</h3>
+    <ul class="posts">
+      <li>
+        <strong class="date">11</strong>
+        <a href="/2009/08/11/now-with-70-less-fat.html">Now with 70% less fat!</a>
+      </li>
+      <li>
+        <strong class="date">03</strong>
+        <a href="/2009/08/03/a-new-beginning.html">A new beginning</a>
+      </li>
+    </ul>
+    <h3 class="month">July</h3>
+    <ul class="posts">
+      <li>
+        <strong class="date">29</strong>
+        <a href="/2009/07/29/lorem-ipsum.html">NDS adventures: code for clearing the screen background</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
 
 
 	<div id="footer">
@@ -138,20 +185,7 @@
 	</div>
 </div>
 
-{% if page.url != "" %}
-<script type="text/javascript">
-(function() {
-		var links = document.getElementsByTagName('a');
-		var query = '?';
-		for(var i = 0; i < links.length; i++) {
-			if(links[i].href.indexOf('#disqus_thread') >= 0) {
-				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
-				document.write('<script type="text/javascript" src="http://disqus.com/forums/scarybox/get_num_replies.js' + query + '"></' + 'script>');
-			}
-		}
-	})();
-</script>
-{% endif %}
+
 <script type="text/javascript" src="/js/prettify.min.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 <script type="text/javascript" src="/js/misc.min.js"></script>

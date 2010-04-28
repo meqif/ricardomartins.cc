@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
-	<title>{{ page.title }}</title>
+	<title>Extending Alfred.app with Applescript</title>
 	<link rel="me home" href="http://ricardomartins.cc/"/>
 	<link rel="openid.server" href="http://www.myopenid.com/server"/>
 	<link rel="openid.delegate" href="http://meqif.myopenid.com"/>
@@ -10,7 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="/css/stylesheet.min.css"/>
 	<link rel="alternate" type="application/atom+xml" title="Ricardo Martins' web place" href="/atom.xml"/>
 	<meta name="author" content="Ricardo Martins" />
-	<meta name="description" content="Ricardo Martins{% if page.url == "" %} is a Computer Science student at Faculdade de Ciências e Tecnologia - Universidade Nova de Lisboa.{% else %} - {{ page.title }}{% endif %}" />
+	<meta name="description" content="Ricardo Martins - Extending Alfred.app with Applescript" />
 	<meta name="keywords" content="ricardo martins, portugal, computer science,computer scientist, software"/>
 	<meta name="viewport" content="width=808" />
 	<meta name="geo.placename" content="Caparica, Almada, Portugal" />
@@ -98,25 +98,49 @@
 	</div>
 	</div>
 
-	{% if page.url == "" %}
-	<div id="about">
-		<div style="float:left; padding: 10px 10px 1px 0;">
-			<a href="http://www.flickr.com/photos/ricardo_martins/4075304185/">
-				<img src="/images/me.jpg" width="200" height="130" alt="Me!"/>
-			</a>
-		</div>
+	
 
-		<div id="about-text">
-			<p>Hello there! My name is Ricardo Martins and I'm currently in my third year of Computer Science at <a href="http://www.di.fct.unl.pt">Faculdade de Ciências e Tecnologia &mdash; Universidade Nova de Lisboa.</a></p>
-			<p>You can also find me at <a href="http://twitter.com/meqif" rel="me">twitter</a>, <a href="http://identi.ca/meqif" rel="me">identi.ca</a>, <a href="http://delicious.com/meqif" rel="me">del.icio.us</a>, <a href="http://flickr.com/ricardo_martins" rel="me">flickr</a>, <a href="http://www.librarything.com/profile/meqif" rel="me">librarything</a>, <a href="http://www.last.fm/user/Meqif" rel="me">last.fm</a>, <a href="http://friendfeed.com/meqif" rel="me">friendfeed</a>, <a href="http://www.dopplr.com/traveller/meqif" rel="me">dopplr</a>, and <a href="http://www.linkedin.com/in/ricardompm" rel="me">linkedin</a>.</p>
-			<p>When I'm not reading, I'm probably writing code. Most can be found at <a href="http://github.com/meqif" rel="me">github</a>.</p>
-			<p>I'm currently developing for the Nintendo DS as a hobby, which I'd like to do full time.</p>
-			<p>You should probably take a look at my <a href="/resume.html" rel="me">resume</a> if you're interested in hiring me.</p>
-		</div>
-	</div>
-	{% endif %}
+	<div id="contents">
+<h2>Extending Alfred.app with Applescript</h2>
+<span class="post-topics"><a href="#disqus_thread">comments</a> [ applescript  osx  ]</span>
+<span class="blurb">15 April 2010</span>
+<br/>
+<script type="text/javascript">
+	tweetmeme_service = 'bit.ly';
+	tweetmeme_source = 'meqif';
+</script>
+<div id="tweetmeme"><p><script type="text/javascript" src="http://tweetmeme.com/i/scripts/button.js"></script></p></div>
+<p>Lately, I’ve been using <a href="http://www.alfredapp.com/">Alfred.app</a> as my application launcher. I used to use Quicksilver, the grandfather of <span class="caps">OSX</span> app launchers but changed to <a href="http://code.google.com/p/qsb-mac/">Google Quick Search Box</a>, since Quicksilver had some problems (namely with Snow Leopard and Spaces). However, Google <acronym title="Quick Search Box"><span class="caps">QSB</span></acronym> proved to be a little too slow for my taste, and Alfred showed up in Hacker News, so I gave it a shot. Couldn’t have been happier with my choice, even though it’s still in an early stage of development.</p>
+<p>I still missed in Alfred something Google <acronym title="Quick Search Box"><span class="caps">QSB</span></acronym> had: easily accessible system actions, like sleep, shut down, restart and lock screen. I like to avoid using the mouse whenever I can.</p>
+<p>This wasn’t a problem. I took a look at the applescript Google <acronym title="Quick Search Box"><span class="caps">QSB</span></acronym> uses internally<sup class="footnote"><a href="#fn1">1</a></sup> and created standalone apps based on each action, using Google <acronym title="Quick Search Box"><span class="caps">QSB</span></acronym>&#8217;s icons<sup class="footnote"><a href="#fn2">2</a></sup>.</p>
+<p>I’m quite pleased with the result, since I got my beloved actions back and Alfred.app is still snappy.</p>
+<p><br/></p>
+<h3>Sleep</h3>
+<p><img src="/images/posts/sleep.png" alt="" /></p>
+<pre class="prettyprint"><code>tell application "System Events" to sleep</code></pre>
+<p><br/></p>
+<h3>Shutdown</h3>
+<p><img src="/images/posts/shutdown.png" alt="" /></p>
+<pre class="prettyprint"><code>tell application "System Events" to shut down</code></pre>
+<p><br/></p>
+<h3>Restart</h3>
+<p><img src="/images/posts/restart.png" alt="" /></p>
+<pre class="prettyprint"><code>tell application "System Events" to restart</code></pre>
+<p><br/></p>
+<h3>Lock Screen</h3>
+<p><img src="/images/posts/lockscreen.png" alt="" /></p>
+<pre class="prettyprint"><code>do shell script "'/System/Library/CoreServices/Menu Extras/User.menu/Contents/Resources/CGSession' -suspend &gt; /dev/null"</code></pre>
+<p><br/></p>
+<p class="footnote" id="fn1"><sup>1</sup> /Applications/Quick Search Box.app/Contents/PlugIns/System.hgs/Contents/Resources/Scripts/main.scpt</p>
+<p class="footnote" id="fn2"><sup>2</sup> /Applications/Quick Search Box.app/Contents/PlugIns/System.hgs/Contents/Resources/</p>
+</div>
 
-	{{ content }}
+<div id="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript" src="http://disqus.com/forums/scarybox/embed.js"></script>
+	<noscript><a href="http://scarybox.disqus.com/?url=ref">View the discussion thread.</a></noscript>
+</div>
+
 
 
 	<div id="footer">
@@ -138,7 +162,7 @@
 	</div>
 </div>
 
-{% if page.url != "" %}
+
 <script type="text/javascript">
 (function() {
 		var links = document.getElementsByTagName('a');
@@ -151,7 +175,7 @@
 		}
 	})();
 </script>
-{% endif %}
+
 <script type="text/javascript" src="/js/prettify.min.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 <script type="text/javascript" src="/js/misc.min.js"></script>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>Ricardo Martins</title>
+ <link href="http://ricardomartins.cc/atom.xml" rel="self"/>
+ <link href="http://ricardomartins.cc/"/>
+ <updated>2010-04-22T21:18:15+01:00</updated>
+ <id>http://ricardomartins.cc/</id>
+ <author>
+   <name>Ricardo Martins</name>
+   <email>ricardo@scarybox.net</email>
+ </author>
+
+ 
+ <entry>
+   <title>Extending Alfred.app with Applescript</title>
+   <link href="http://ricardomartins.cc/2010/04/15/extending-alfred.app-with-applescript.html"/>
+   <updated>2010-04-15T23:04:00+01:00</updated>
+   <id>http://ricardomartins.cc/2010/04/15/extending-alfred.app-with-applescript</id>
+   <content type="html">&lt;p&gt;Lately, I’ve been using &lt;a href="http://www.alfredapp.com/"&gt;Alfred.app&lt;/a&gt; as my application launcher. I used to use Quicksilver, the grandfather of &lt;span class="caps"&gt;OSX&lt;/span&gt; app launchers but changed to &lt;a href="http://code.google.com/p/qsb-mac/"&gt;Google Quick Search Box&lt;/a&gt;, since Quicksilver had some problems (namely with Snow Leopard and Spaces). However, Google &lt;acronym title="Quick Search Box"&gt;&lt;span class="caps"&gt;QSB&lt;/span&gt;&lt;/acronym&gt; proved to be a little too slow for my taste, and Alfred showed up in Hacker News, so I gave it a shot. Couldn’t have been happier with my choice, even though it’s still in an early stage of development.&lt;/p&gt;
+&lt;p&gt;I still missed in Alfred something Google &lt;acronym title="Quick Search Box"&gt;&lt;span class="caps"&gt;QSB&lt;/span&gt;&lt;/acronym&gt; had: easily accessible system actions, like sleep, shut down, restart and lock screen. I like to avoid using the mouse whenever I can.&lt;/p&gt;
+&lt;p&gt;This wasn’t a problem. I took a look at the applescript Google &lt;acronym title="Quick Search Box"&gt;&lt;span class="caps"&gt;QSB&lt;/span&gt;&lt;/acronym&gt; uses internally&lt;sup class="footnote"&gt;&lt;a href="#fn1"&gt;1&lt;/a&gt;&lt;/sup&gt; and created standalone apps based on each action, using Google &lt;acronym title="Quick Search Box"&gt;&lt;span class="caps"&gt;QSB&lt;/span&gt;&lt;/acronym&gt;&amp;#8217;s icons&lt;sup class="footnote"&gt;&lt;a href="#fn2"&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p&gt;I’m quite pleased with the result, since I got my beloved actions back and Alfred.app is still snappy.&lt;/p&gt;
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;h3&gt;Sleep&lt;/h3&gt;
+&lt;p&gt;&lt;img src="/images/posts/sleep.png" alt="" /&gt;&lt;/p&gt;
+&lt;pre class="prettyprint"&gt;&lt;code&gt;tell application "System Events" to sleep&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;h3&gt;Shutdown&lt;/h3&gt;
+&lt;p&gt;&lt;img src="/images/posts/shutdown.png" alt="" /&gt;&lt;/p&gt;
+&lt;pre class="prettyprint"&gt;&lt;code&gt;tell application "System Events" to shut down&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;h3&gt;Restart&lt;/h3&gt;
+&lt;p&gt;&lt;img src="/images/posts/restart.png" alt="" /&gt;&lt;/p&gt;
+&lt;pre class="prettyprint"&gt;&lt;code&gt;tell application "System Events" to restart&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;h3&gt;Lock Screen&lt;/h3&gt;
+&lt;p&gt;&lt;img src="/images/posts/lockscreen.png" alt="" /&gt;&lt;/p&gt;
+&lt;pre class="prettyprint"&gt;&lt;code&gt;do shell script "'/System/Library/CoreServices/Menu Extras/User.menu/Contents/Resources/CGSession' -suspend &amp;gt; /dev/null"&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;br/&gt;&lt;/p&gt;
+&lt;p class="footnote" id="fn1"&gt;&lt;sup&gt;1&lt;/sup&gt; /Applications/Quick Search Box.app/Contents/PlugIns/System.hgs/Contents/Resources/Scripts/main.scpt&lt;/p&gt;
+&lt;p class="footnote" id="fn2"&gt;&lt;sup&gt;2&lt;/sup&gt; /Applications/Quick Search Box.app/Contents/PlugIns/System.hgs/Contents/Resources/&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>On privacy and wrong telephone numbers</title>
+   <link href="http://ricardomartins.cc/2010/02/01/on-privacy-and-wrong-telephone-numbers.html"/>
+   <updated>2010-02-01T18:37:00+00:00</updated>
+   <id>http://ricardomartins.cc/2010/02/01/on-privacy-and-wrong-telephone-numbers</id>
+   <content type="html">&lt;p&gt;I just got scared out of my wits.&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.flickr.com/photos/phones/1640294230/"&gt;&lt;img style="float:right; margin:0.5em" src="http://farm3.static.flickr.com/2078/1640294230_c87fb2f86d_m_d.jpg" /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;A man with the same first &lt;em&gt;and&lt;/em&gt; last name as I called me home, saying he looked around the site [Which site!? My site!?] and wanted to order tickets for a show in London [&lt;span class="caps"&gt;WHAT&lt;/span&gt;!?]. He rambled on for a bit but I was too bewildered to pay much attention.&lt;/p&gt;
+&lt;p&gt;When I expressed my confusion, he said he was sorry and &amp;#8216;hung up&amp;#8217;. Maybe he didn&amp;#8217;t really put the receiver down or press the button well, because the call didn&amp;#8217;t end.&lt;/p&gt;
+&lt;p&gt;I didn&amp;#8217;t hang up and kept listening. I know, it&amp;#8217;s not nice to spy on people, but I was very unsettled by that call. After a little while, maybe ten seconds, I heard a woman in the background asking the man &amp;#8220;How was it?&amp;#8221; [The phone call? The prank?]. I suppose the man was also a bit confused as he took a few seconds to answer. He read a telephone number aloud and realized his mistake: he meant to call a ticket ordering service and got &lt;strong&gt;a digit&lt;/strong&gt; wrong.&lt;/p&gt;
+&lt;p&gt;This happened after a conversation about privacy (or rather, lack of it).&lt;/p&gt;
+&lt;p&gt;Having a relatively common name and being paranoid about privacy sucks. Even moreso when people with the same name as you phone you home. As we say nowadays, I shat bricks&lt;sup class="footnote"&gt;&lt;a href="#fn1"&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;p class="footnote" id="fn1"&gt;&lt;sup&gt;1&lt;/sup&gt; A &lt;a href="http://en.wikipedia.org/wiki/Dysphemism"&gt;dysphemism&lt;/a&gt; meaning someone experienced a situation that caused a profound sentiment of fear or was very startled.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Snow Leopard calculates disk space in base 10</title>
+   <link href="http://ricardomartins.cc/2009/09/01/snow-leopard-calculates-disk-space-in-base-10.html"/>
+   <updated>2009-09-01T00:33:00+01:00</updated>
+   <id>http://ricardomartins.cc/2009/09/01/snow-leopard-calculates-disk-space-in-base-10</id>
+   <content type="html">&lt;p&gt;Among the many under the hood improvements included in the latest &lt;span class="caps"&gt;OSX&lt;/span&gt; version (10.6 &amp;#8212; Snow Leopard, for those who&amp;#8217;ve been under a rock the last few months), there&amp;#8217;s an unexpected and &lt;em&gt;unpleasant&lt;/em&gt; (at least for me) surprise: now Finder uses base 10 to calculate disk and file sizes, instead of the base 2 &lt;em&gt;de facto&lt;/em&gt; standard.&lt;/p&gt;
+&lt;p&gt;Apparently, the motive behind this is to avoid the consumers feeling cheated when they buy an allegedly 1TB hard drive and find out it really is a &lt;del&gt;953GB&lt;/del&gt; 931GB drive. Meanwhile, the &lt;span class="caps"&gt;RAM&lt;/span&gt; size is still reported according to the supposedly old and deprecated base 2 representation. I love consistency.&lt;/p&gt;
+&lt;p&gt;This all stems from one very simple fact: hard drive manufacturers have been maliciously marketing their hard drives&amp;#8217; capacities in base 10 since the 90&amp;#8217;s, since it&amp;#8217;s more profitable to sell a 100 &amp;times; 10^9 byte hard drive as a 100GB drive instead of a 100 &amp;times; 2^30 byte drive, since the latter would be more expensive to manufacture.&lt;/p&gt;
+&lt;p&gt;It wasn&amp;#8217;t always like this, hard drives from respectable manufacturers used to have the announced capacity, but someone saw an opportunity to profit more by selling less and took it. The other manufacturers had to do the same in order to remain competitive.&lt;/p&gt;
+&lt;p&gt;Since Apple yielded to the &lt;a href="http://en.wikipedia.org/wiki/Binary_prefix#IEC_standard_prefixes"&gt;&lt;span class="caps"&gt;IEC&lt;/span&gt; standard&lt;/a&gt; (base 10), we&amp;#8217;re bound to find many inconsistencies in the reported size of files and disks across operating systems, leading to more confusion. Notice the change is only in Finder, none of the other applications do this. We should be able to choose the preferred representation.&lt;/p&gt;
+&lt;p&gt;Thank you, Apple, &lt;a href="http://tvtropes.org/pmwiki/pmwiki.php/Main/NiceJobBreakingItHero"&gt;nice job breaking it&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;img src="/images/posts/claphandss.gif" alt="Clapping" title="Nice job breaking it, Apple"/&gt;&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Now with 70% less fat!</title>
+   <link href="http://ricardomartins.cc/2009/08/11/now-with-70-less-fat.html"/>
+   <updated>2009-08-11T12:21:00+01:00</updated>
+   <id>http://ricardomartins.cc/2009/08/11/now-with-70-less-fat</id>
+   <content type="html">&lt;p&gt;For the last few days, I&amp;#8217;ve been optimising this blog in order to have it load faster. Why? A site that loads fast is a good site.&lt;/p&gt;
+&lt;p&gt;One of the most obvious things would be compressing the content sent to the client/browser. For somewhat obvious reasons, &lt;a href="http://www.nearlyfreespeech.net"&gt;NearlyFreeSpeech&lt;/a&gt; didn&amp;#8217;t enable the gzip module on Apache nor does allow one to enable it in &lt;code&gt;.htaccess&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;After a few digging in the &lt;abbr title="NearlyFreeSpeech"&gt;&lt;span class="caps"&gt;NFS&lt;/span&gt;&lt;/abbr&gt; forums, I came to the conclusion that I had two options: either using MultiViews or a RewriteRule in my &lt;code&gt;.htaccess&lt;/code&gt;. Since the MultiViews needed some more work, I opted for the following rewrite rules:&lt;/p&gt;
+&lt;pre class='prettyprint'&gt;Header add Vary accept-encoding 
+RewriteEngine on 
+RewriteCond %{HTTP:accept-encoding} gzip 
+RewriteCond %{REQUEST_FILENAME} !\.gz$ 
+RewriteCond %{REQUEST_FILENAME}.gz -f 
+RewriteRule (.*) $1.gz [L]&lt;/pre&gt;
+&lt;p&gt;Translated to plain English, this checks whether the requested file isn&amp;#8217;t already a &lt;code&gt;.gz&lt;/code&gt; file and if there&amp;#8217;s a gzipped version of the requested file in the server. If so, the gzipped version is sent to the browser instead. This allowed to reduce in more than half the size of most files (html, css and js).&lt;/p&gt;
+&lt;p&gt;The next step was &amp;#8220;smushing&amp;#8221; the images, that is, compressing them further. There&amp;#8217;s a service (&lt;a href="http://smush.it"&gt;Smush.it&lt;/a&gt;) that tries several techniques to compress images without changing the image quality. This shaved a few more KB.&lt;/p&gt;
+&lt;p&gt;However, that wasn&amp;#8217;t enough for me. I needed more. This was becoming almost an addiction, trying to make my blog so light it loaded instantly.&lt;/p&gt;
+&lt;p&gt;So I used another cool service (&lt;a href="http://compressorrater.thruhere.net/"&gt;CompressorRater&lt;/a&gt;) to try several minification techniques on Javascript code in order to squeeze some more KB. Success!&lt;/p&gt;
+&lt;p&gt;I still had too many &lt;span class="caps"&gt;HTTP&lt;/span&gt; requests going on. Each &lt;span class="caps"&gt;HTTP&lt;/span&gt; request adds some loading time to the total. Since I was using three stylesheets (one for &lt;a href="http://meyerweb.com/eric/tools/css/reset/"&gt;resetting the &lt;span class="caps"&gt;CSS&lt;/span&gt; styles&lt;/a&gt;, another for the code syntax highlighter and one for the blog stylesheet itself), I first tried merging them all into one file. That had disastrous results and I&amp;#8217;m still not exactly sure why.&lt;br /&gt;
+&amp;#8220;Alright&amp;#8221;, I thought, &amp;#8220;I&amp;#8217;ll just leave the reset &lt;span class="caps"&gt;CSS&lt;/span&gt; alone and merge the other two.&amp;#8221; It worked fine. Then I minified it, which shaved about half the original size.&lt;/p&gt;
+&lt;p&gt;At this point, there wasn&amp;#8217;t much more I could do. The bottleneck now was loading the comments from Disqus. But there was one thing bugging me: the code for updating the comment count was running in every page, even in the index/archive, where there was no need. That introduced some delay in a completely static page.&lt;br /&gt;
+It turns out the code the guys at Disqus tell you to use do something silly for a reason I cannot understand: after checking for thread/blog post links, it contacts the Disqus servers to get the comment count &lt;em&gt;even if finds no such links&lt;/em&gt;!&lt;/p&gt;
+&lt;p&gt;So, I changed it to the following:&lt;/p&gt;
+&lt;pre class='prettyprint'&gt;(function() {
+  var links = document.getElementsByTagName('a');
+  var query = '?';
+  for(var i = 0; i &amp;lt; links.length; i++) {
+    if(links[i].href.indexOf('#disqus_thread') &amp;gt;= 0) {
+      query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&amp;amp;';
+      document.write('&amp;lt;script type="text/javascript" src="http://disqus.com/forums/scarybox/get_num_replies.js' + query + '"&amp;gt;&amp;lt;/' + 'script&amp;gt;');
+    }
+  }
+})();&lt;/pre&gt;
+&lt;p&gt;This fixed the problem without seemingly affecting the script&amp;#8217;s behaviour.&lt;/p&gt;
+&lt;p&gt;I also updated the link to jQuery, from version 1.2.6 to 1.3.2. The new version is 3KB bigger but it&amp;#8217;s also much faster than the pre-1.3 versions. For instance, the &amp;#8220;About&amp;#8221; slider on the top of this blog now slides up and down much smoother. All in all, it was worth the extra 3KB, since I removed much more in my little adventure with compressing stuff.&lt;/p&gt;
+&lt;p&gt;Now the slowest part of my site is loading the Disqus comments, and I have no idea how to speed that up. Any suggestions?&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>A new beginning</title>
+   <link href="http://ricardomartins.cc/2009/08/03/a-new-beginning.html"/>
+   <updated>2009-08-03T00:00:00+01:00</updated>
+   <id>http://ricardomartins.cc/2009/08/03/a-new-beginning</id>
+   <content type="html">&lt;p&gt;In another treacherous act of blogginess, I nuked my tumblelog and started using &lt;a href="http://github.com/mojombo/jekyll/tree/master"&gt;Jekyll&lt;/a&gt; (a static site generator in Ruby). Actually, I&amp;#8217;m using a &lt;a href="http://github.com/henrik/jekyll/tree/master"&gt;fork&lt;/a&gt; created by &lt;a href="http://henrik.nyh.se"&gt;Henrik Nyh&lt;/a&gt; that adds support for &lt;a href="http://haml-lang.com/"&gt;Haml&lt;/a&gt; (for templates) and a few other niceties.&lt;/p&gt;
+&lt;p&gt;The reason for this was, since my blog tends to be quite static, it doesn&amp;#8217;t make much sense to use a full blown dynamic &lt;span class="caps"&gt;CMS&lt;/span&gt; like &lt;a href="http://www.wordpress.org"&gt;Wordpress&lt;/a&gt; or &lt;a href="http://wiki.github.com/fdv/typo/"&gt;Typo&lt;/a&gt;, or even a custom one powered by Django, like I had once, &lt;span class="caps"&gt;PLUS&lt;/span&gt; a database for my posts &lt;span class="caps"&gt;PLUS&lt;/span&gt; caching, if I don&amp;#8217;t want a slow site. Isn&amp;#8217;t this too much overhead just for a tiny blog? And migrating posts between those systems is a pain in the neck. The only truly dynamic part of my blog are the comments, and those are handled very well by &lt;a href="http://www.disqus.com"&gt;Disqus&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;In Jekyll, posts are plain text files, using whatever markup you like (I use Textile, but you can use Markdown too, or any other filter if you fork the source). You edit them in your favourite text editor (I&amp;#8217;m using TextMate right now), then invoke &lt;code&gt;jekyll&lt;/code&gt; in the root directory of your blog and presto, your static blog is generated! Then it&amp;#8217;s just a matter of uploading the files to your hosting provider and you&amp;#8217;re done.&lt;/p&gt;
+&lt;p&gt;Another cool thing is, this way I can easily back up and keep track of changes in my blog by using git and a repository somewhere (I like &lt;a href="http://github.com"&gt;github&lt;/a&gt;).&lt;/p&gt;
+&lt;p&gt;Oh, another thing: I&amp;#8217;m redirecting scarybox.net to ricardomartins.cc. There was too much overlap between them to justify the separate existence of both at the moment. Don&amp;#8217;t worry, scarybox won&amp;#8217;t die anytime soon, it&amp;#8217;s time will soon come, rising as the sinister &amp;#8220;scarybox project&amp;#8221;! &lt;code&gt;&amp;lt;insert mad cackling&amp;gt;&lt;/code&gt;&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>NDS adventures: code for clearing the screen background</title>
+   <link href="http://ricardomartins.cc/2009/07/29/lorem-ipsum.html"/>
+   <updated>2009-07-29T00:00:00+01:00</updated>
+   <id>http://ricardomartins.cc/2009/07/29/lorem-ipsum</id>
+   <content type="html">&lt;p&gt;I&amp;#8217;ve been getting my feet wet with developing for the Nintendo DS. While I can&amp;#8217;t afford the official &lt;abbr title="Software Development Kit"&gt;&lt;span class="caps"&gt;SDK&lt;/span&gt;&lt;/abbr&gt; (nor would they sell it to me, a lowly student with no intention to sell games yet), I installed &lt;a href="http://www.devkitpro.org/"&gt;devkitARM&lt;/a&gt;, an unofficial &lt;abbr title="Software Development Kit"&gt;&lt;span class="caps"&gt;SDK&lt;/span&gt;&lt;/abbr&gt; developed by &amp;#8220;amateurs&amp;#8221;.&lt;/p&gt;
+&lt;h2&gt;Down to the basics&lt;/h2&gt;
+&lt;p&gt;First things first, I wanted to learn how to clear the screen (actually, there are two screens in the &lt;abbr title="Nintendo DS"&gt;&lt;span class="caps"&gt;NDS&lt;/span&gt;&lt;/abbr&gt;, but let&amp;#8217;s leave that aside for now).&lt;/p&gt;
+&lt;p&gt;Actually, there are several ways to clear to background or, better said, painting it black.&lt;br /&gt;
+One way is iterating over each pixel in the display buffer (&lt;code&gt;BG_BMP_RAM_SUB&lt;/code&gt;) and setting it&amp;#8217;s color as black (&lt;span class="caps"&gt;RGB&lt;/span&gt; 0,0,0).&lt;/p&gt;
+&lt;pre class='prettyprint'&gt;/* Clears the background of the sub screen. */
+void clearBottomScreen()
+{
+    u16* video_buffer_main = (u16*)BG_BMP_RAM_SUB(0);
+    int i;
+    for (i = 0; i &amp;lt; SCREEN_HEIGHT*SCREEN_WIDTH; i++)
+        video_buffer_main[i] = RGB15(0,0,0);
+}&lt;/pre&gt;
+&lt;p&gt;One other way I read somewhere and which is surely more efficient involves doing something similar over &lt;span class="caps"&gt;DMA&lt;/span&gt; transfers, painting much more than a pixel at a time. I shall investigate this.&lt;/p&gt;</content>
+ </entry>
+ 
+
+</feed>

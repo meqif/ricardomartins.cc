@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+	xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+			http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <url>
+		<loc>http://ricardomartins.cc</loc>
+		<lastmod>2010-04-22T21:18:15+01:00</lastmod>
+		<changefreq>daily</changefreq>
+		<priority>1.00</priority>
+	</url>
+
+	<url>
+		<loc>http://ricardomartins.cc/resume.html</loc>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>http://ricardomartins.cc//2010/04/15/extending-alfred.app-with-applescript.html</loc>
+		<lastmod>2010-04-22T21:18:15+01:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>http://ricardomartins.cc//2010/02/01/on-privacy-and-wrong-telephone-numbers.html</loc>
+		<lastmod>2010-04-22T21:18:15+01:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>http://ricardomartins.cc//2009/09/01/snow-leopard-calculates-disk-space-in-base-10.html</loc>
+		<lastmod>2010-04-22T21:18:15+01:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>http://ricardomartins.cc//2009/08/11/now-with-70-less-fat.html</loc>
+		<lastmod>2010-04-22T21:18:15+01:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>http://ricardomartins.cc//2009/08/03/a-new-beginning.html</loc>
+		<lastmod>2010-04-22T21:18:15+01:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.80</priority>
+	</url>
+	
+	<url>
+		<loc>http://ricardomartins.cc//2009/07/29/lorem-ipsum.html</loc>
+		<lastmod>2010-04-22T21:18:15+01:00</lastmod>
+		<changefreq>monthly</changefreq>
+		<priority>0.80</priority>
+	</url>
+	
+</urlset>

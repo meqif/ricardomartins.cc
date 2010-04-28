@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
-	<title>{{ page.title }}</title>
+	<title>Snow Leopard calculates disk space in base 10</title>
 	<link rel="me home" href="http://ricardomartins.cc/"/>
 	<link rel="openid.server" href="http://www.myopenid.com/server"/>
 	<link rel="openid.delegate" href="http://meqif.myopenid.com"/>
@@ -10,7 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="/css/stylesheet.min.css"/>
 	<link rel="alternate" type="application/atom+xml" title="Ricardo Martins' web place" href="/atom.xml"/>
 	<meta name="author" content="Ricardo Martins" />
-	<meta name="description" content="Ricardo Martins{% if page.url == "" %} is a Computer Science student at Faculdade de Ciências e Tecnologia - Universidade Nova de Lisboa.{% else %} - {{ page.title }}{% endif %}" />
+	<meta name="description" content="Ricardo Martins - Snow Leopard calculates disk space in base 10" />
 	<meta name="keywords" content="ricardo martins, portugal, computer science,computer scientist, software"/>
 	<meta name="viewport" content="width=808" />
 	<meta name="geo.placename" content="Caparica, Almada, Portugal" />
@@ -98,25 +98,33 @@
 	</div>
 	</div>
 
-	{% if page.url == "" %}
-	<div id="about">
-		<div style="float:left; padding: 10px 10px 1px 0;">
-			<a href="http://www.flickr.com/photos/ricardo_martins/4075304185/">
-				<img src="/images/me.jpg" width="200" height="130" alt="Me!"/>
-			</a>
-		</div>
+	
 
-		<div id="about-text">
-			<p>Hello there! My name is Ricardo Martins and I'm currently in my third year of Computer Science at <a href="http://www.di.fct.unl.pt">Faculdade de Ciências e Tecnologia &mdash; Universidade Nova de Lisboa.</a></p>
-			<p>You can also find me at <a href="http://twitter.com/meqif" rel="me">twitter</a>, <a href="http://identi.ca/meqif" rel="me">identi.ca</a>, <a href="http://delicious.com/meqif" rel="me">del.icio.us</a>, <a href="http://flickr.com/ricardo_martins" rel="me">flickr</a>, <a href="http://www.librarything.com/profile/meqif" rel="me">librarything</a>, <a href="http://www.last.fm/user/Meqif" rel="me">last.fm</a>, <a href="http://friendfeed.com/meqif" rel="me">friendfeed</a>, <a href="http://www.dopplr.com/traveller/meqif" rel="me">dopplr</a>, and <a href="http://www.linkedin.com/in/ricardompm" rel="me">linkedin</a>.</p>
-			<p>When I'm not reading, I'm probably writing code. Most can be found at <a href="http://github.com/meqif" rel="me">github</a>.</p>
-			<p>I'm currently developing for the Nintendo DS as a hobby, which I'd like to do full time.</p>
-			<p>You should probably take a look at my <a href="/resume.html" rel="me">resume</a> if you're interested in hiring me.</p>
-		</div>
-	</div>
-	{% endif %}
+	<div id="contents">
+<h2>Snow Leopard calculates disk space in base 10</h2>
+<span class="post-topics"><a href="#disqus_thread">comments</a> [ nerdrage  osx  ]</span>
+<span class="blurb">01 September 2009</span>
+<br/>
+<script type="text/javascript">
+	tweetmeme_service = 'bit.ly';
+	tweetmeme_source = 'meqif';
+</script>
+<div id="tweetmeme"><p><script type="text/javascript" src="http://tweetmeme.com/i/scripts/button.js"></script></p></div>
+<p>Among the many under the hood improvements included in the latest <span class="caps">OSX</span> version (10.6 &#8212; Snow Leopard, for those who&#8217;ve been under a rock the last few months), there&#8217;s an unexpected and <em>unpleasant</em> (at least for me) surprise: now Finder uses base 10 to calculate disk and file sizes, instead of the base 2 <em>de facto</em> standard.</p>
+<p>Apparently, the motive behind this is to avoid the consumers feeling cheated when they buy an allegedly 1TB hard drive and find out it really is a <del>953GB</del> 931GB drive. Meanwhile, the <span class="caps">RAM</span> size is still reported according to the supposedly old and deprecated base 2 representation. I love consistency.</p>
+<p>This all stems from one very simple fact: hard drive manufacturers have been maliciously marketing their hard drives&#8217; capacities in base 10 since the 90&#8217;s, since it&#8217;s more profitable to sell a 100 &times; 10^9 byte hard drive as a 100GB drive instead of a 100 &times; 2^30 byte drive, since the latter would be more expensive to manufacture.</p>
+<p>It wasn&#8217;t always like this, hard drives from respectable manufacturers used to have the announced capacity, but someone saw an opportunity to profit more by selling less and took it. The other manufacturers had to do the same in order to remain competitive.</p>
+<p>Since Apple yielded to the <a href="http://en.wikipedia.org/wiki/Binary_prefix#IEC_standard_prefixes"><span class="caps">IEC</span> standard</a> (base 10), we&#8217;re bound to find many inconsistencies in the reported size of files and disks across operating systems, leading to more confusion. Notice the change is only in Finder, none of the other applications do this. We should be able to choose the preferred representation.</p>
+<p>Thank you, Apple, <a href="http://tvtropes.org/pmwiki/pmwiki.php/Main/NiceJobBreakingItHero">nice job breaking it</a>.</p>
+<p><img src="/images/posts/claphandss.gif" alt="Clapping" title="Nice job breaking it, Apple"/></p>
+</div>
 
-	{{ content }}
+<div id="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript" src="http://disqus.com/forums/scarybox/embed.js"></script>
+	<noscript><a href="http://scarybox.disqus.com/?url=ref">View the discussion thread.</a></noscript>
+</div>
+
 
 
 	<div id="footer">
@@ -138,7 +146,7 @@
 	</div>
 </div>
 
-{% if page.url != "" %}
+
 <script type="text/javascript">
 (function() {
 		var links = document.getElementsByTagName('a');
@@ -151,7 +159,7 @@
 		}
 	})();
 </script>
-{% endif %}
+
 <script type="text/javascript" src="/js/prettify.min.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 <script type="text/javascript" src="/js/misc.min.js"></script>
