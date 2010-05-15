@@ -1,9 +1,0 @@
-User-agent: *
-Disallow: /tasks/
-Disallow: /atom.xml
-Disallow: /files/
-Disallow: /images/
-Disallow: /css/
-Disallow: /js/
-Allow: /
-
