@@ -1,0 +1,55 @@
+---
+layout: post
+title: "Extending Alfred.app with Applescript"
+tags:
+- osx
+- applescript
+---
+
+*EDIT*: This post has been obsoleted by Alfred 0.6.1. :)
+
+Lately, I’ve been using "Alfred.app":http://www.alfredapp.com/ as my application launcher. I used to use Quicksilver, the grandfather of OSX app launchers but changed to "Google Quick Search Box":http://code.google.com/p/qsb-mac/, since Quicksilver had some problems (namely with Snow Leopard and Spaces). However, Google QSB(Quick Search Box) proved to be a little too slow for my taste, and Alfred showed up in Hacker News, so I gave it a shot. Couldn’t have been happier with my choice, even though it’s still in an early stage of development.
+
+I still missed in Alfred something Google QSB(Quick Search Box) had: easily accessible system actions, like sleep, shut down, restart and lock screen. I like to avoid using the mouse whenever I can.
+
+This wasn’t a problem. I took a look at the applescript Google QSB(Quick Search Box) uses internally[1] and created standalone apps based on each action, using Google QSB(Quick Search Box)'s icons[2].
+
+I’m quite pleased with the result, since I got my beloved actions back and Alfred.app is still snappy.
+
+<br/>
+
+h3. Sleep
+
+!/images/posts/sleep.png!
+
+<pre class="prettyprint"><code>tell application "System Events" to sleep</code></pre>
+
+<br/>
+
+h3. Shutdown
+
+!/images/posts/shutdown.png!
+
+<pre class="prettyprint"><code>tell application "System Events" to shut down</code></pre>
+
+<br/>
+
+h3. Restart
+
+!/images/posts/restart.png!
+
+<pre class="prettyprint"><code>tell application "System Events" to restart</code></pre>
+
+<br/>
+
+h3. Lock Screen
+
+!/images/posts/lockscreen.png!
+
+<pre class="prettyprint"><code>do shell script "'/System/Library/CoreServices/Menu Extras/User.menu/Contents/Resources/CGSession' -suspend > /dev/null"</code></pre>
+
+<br/>
+
+fn1. /Applications/Quick Search Box.app/Contents/PlugIns/System.hgs/Contents/Resources/Scripts/main.scpt
+
+fn2. /Applications/Quick Search Box.app/Contents/PlugIns/System.hgs/Contents/Resources/
