@@ -15,13 +15,15 @@ First things first, I wanted to learn how to clear the screen (actually, there a
 Actually, there are several ways to clear to background or, better said, painting it black.
 One way is iterating over each pixel in the display buffer (<code>BG_BMP_RAM_SUB</code>) and setting it's color as black (RGB 0,0,0).
 
-<pre class='prettyprint'>/* Clears the background of the sub screen. */
+{% highlight c %}
+/* Clears the background of the sub screen. */
 void clearBottomScreen()
 {
     u16* video_buffer_main = (u16*)BG_BMP_RAM_SUB(0);
     int i;
     for (i = 0; i < SCREEN_HEIGHT*SCREEN_WIDTH; i++)
         video_buffer_main[i] = RGB15(0,0,0);
-}</pre>
+}
+{% endhighlight %}
 
 One other way I read somewhere and which is surely more efficient involves doing something similar over DMA transfers, painting much more than a pixel at a time. I shall investigate this.

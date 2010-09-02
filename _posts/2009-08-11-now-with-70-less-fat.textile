@@ -12,12 +12,14 @@ One of the most obvious things would be compressing the content sent to the clie
 
 After a few digging in the <abbr title="NearlyFreeSpeech">NFS</abbr> forums, I came to the conclusion that I had two options: either using MultiViews or a RewriteRule in my @.htaccess@. Since the MultiViews needed some more work, I opted for the following rewrite rules:
 
-<pre class='prettyprint'>Header add Vary accept-encoding 
-RewriteEngine on 
-RewriteCond %{HTTP:accept-encoding} gzip 
-RewriteCond %{REQUEST_FILENAME} !\.gz$ 
-RewriteCond %{REQUEST_FILENAME}.gz -f 
-RewriteRule (.*) $1.gz [L]</pre>
+{% highlight apache %}
+Header add Vary accept-encoding
+RewriteEngine on
+RewriteCond %{HTTP:accept-encoding} gzip
+RewriteCond %{REQUEST_FILENAME} !\.gz$
+RewriteCond %{REQUEST_FILENAME}.gz -f
+RewriteRule (.*) $1.gz [L]
+{% endhighlight %}
 
 Translated to plain English, this checks whether the requested file isn't already a @.gz@ file and if there's a gzipped version of the requested file in the server. If so, the gzipped version is sent to the browser instead. This allowed to reduce in more than half the size of most files (html, css and js).
 
@@ -35,7 +37,8 @@ It turns out the code the guys at Disqus tell you to use do something silly for 
 
 So, I changed it to the following:
 
-<pre class='prettyprint'>(function() {
+{% highlight js %}
+(function() {
   var links = document.getElementsByTagName('a');
   var query = '?';
   for(var i = 0; i < links.length; i++) {
@@ -44,7 +47,8 @@ So, I changed it to the following:
       document.write('<script type="text/javascript" src="http://disqus.com/forums/scarybox/get_num_replies.js' + query + '"></' + 'script>');
     }
   }
-})();</pre>
+})();
+{% endhighlight %}
 
 This fixed the problem without seemingly affecting the script's behaviour.
 

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Extending Alfred.app with Applescript"
+excerpt: Alfred.app is an awesome launcher, but I missed some quick shortcuts to system commands, like sleep, shutdown and restart. Applescript was enough to solve it and I explain how.
 tags:
 - osx
 - applescript
@@ -22,7 +23,9 @@ h3. Sleep
 
 !/images/posts/sleep.png!
 
-<pre class="prettyprint"><code>tell application "System Events" to sleep</code></pre>
+{% highlight applescript %}
+tell application "System Events" to sleep
+{% endhighlight %}
 
 <br/>
 
@@ -30,7 +33,9 @@ h3. Shutdown
 
 !/images/posts/shutdown.png!
 
-<pre class="prettyprint"><code>tell application "System Events" to shut down</code></pre>
+{% highlight applescript %}
+tell application "System Events" to shut down
+{% endhighlight %}
 
 <br/>
 
@@ -38,7 +43,9 @@ h3. Restart
 
 !/images/posts/restart.png!
 
-<pre class="prettyprint"><code>tell application "System Events" to restart</code></pre>
+{% highlight applescript %}
+tell application "System Events" to restart
+{% endhighlight %}
 
 <br/>
 
@@ -46,7 +53,9 @@ h3. Lock Screen
 
 !/images/posts/lockscreen.png!
 
-<pre class="prettyprint"><code>do shell script "'/System/Library/CoreServices/Menu Extras/User.menu/Contents/Resources/CGSession' -suspend > /dev/null"</code></pre>
+{% highlight applescript %}
+do shell script "'/System/Library/CoreServices/Menu Extras/User.menu/Contents/Resources/CGSession' -suspend > /dev/null"
+{% endhighlight %}
 
 <br/>
 
