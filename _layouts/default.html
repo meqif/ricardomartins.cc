@@ -1,173 +1,68 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-	<meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
-	<title>{{ page.title }}</title>
-	<link rel="me home" href="http://ricardomartins.cc/"/>
-	<link rel="openid.server" href="http://www.myopenid.com/server"/>
-	<link rel="openid.delegate" href="http://meqif.myopenid.com"/>
-	<link rel="stylesheet" type="text/css" href="/css/reset.css"/>
-	<link rel="stylesheet" type="text/css" href="/css/stylesheet.min.css"/>
-	<link rel="alternate" type="application/atom+xml" title="Ricardo Martins' web place" href="/atom.xml"/>
-	<meta name="author" content="Ricardo Martins" />
-	<meta name="description" content="Ricardo Martins{% if page.url == "" %} is a Computer Science student at Faculdade de Ciências e Tecnologia - Universidade Nova de Lisboa.{% else %} - {{ page.title }}{% endif %}" />
-	<meta name="keywords" content="ricardo martins, portugal, computer science,computer scientist, software"/>
-	<meta name="viewport" content="width=808" />
-	<meta name="geo.placename" content="Caparica, Almada, Portugal" />
-	<meta name="geo.position" content="38.668428;-9.190110" />
-	<meta name="geo.region" content="PT-Setubal" />
-	<meta name="ICBM" content="38.668428, -9.190110" />
-	<meta name="DC.title" content="Ricardo Martins' online home"/>
-	<!--
-	<script type="text/javascript" src="http://use.typekit.com/fon1szy.js"></script>
-	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-	-->
-	<!--
-	<link rel="stylesheet" href="http://static.tumblr.com/thpaaos/DIcklyl4z/reset.css" type="text/css">
-	-->
-	<style type="text/css">
-	  body {
-	    height: 100%;
-	    color: #454545;
-	/*
-	    font-size: 14px;
-	    line-height: 21px;
-	*/
-	    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-	    background: url('/images/bg.jpg');
-		margin-right:auto;
-		margin-left:auto;
-	  }
 
-	  a {
-	    color: #238db1;
-	    text-decoration: none;
-	  }
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="keywords" content="ricardo martins, ricardomartins"/>
+		<meta name="description" content="Ricardo Martins; Open source enthusiast and Computer Science student @ FCT-UNL, Portugal."/>
+		<title>
+		  {% unless page.home %}{{ page.title }} - {% endunless %}Ricardo Martins
+		</title>
+		<link rel="openid.server" href="http://www.myopenid.com/server"/>
+		<link rel="openid.delegate" href="http://meqif.myopenid.com"/>
+		<link rel="alternate" type="application/atom+xml" href="/atom.xml"/>
+		<!--[if lt IE 9]>
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<link rel="stylesheet" media="all" href="/css/reset.css"/>
+		<link rel="stylesheet" media="all" href="/css/screen.css"/>
+		<meta name="viewport" content="initial-scale=1.0, width=device-width"/>
+	</head>
 
-	  *:active,*:focus { outline: 0px; }
-	  a img { border-width: 0px; }
-
-	/*
-	  p {
-	    margin: 0 0 14px 0;
-	  }
-
-	  #footer p {
-		margin: 0;
-	}
-
-	#footer {
-		padding-top: 15px;
-	}
-	*/
-
-	p { font-size: 12px; }
-
-	  em { font-style: italic; }
-	  strong { font-weight: bold; }
-
-	  blockquote {
-	    border-left: 4px solid #EFEFEF;
-	    margin: 0 0 14px 0;
-	    padding: 0 0 0 15px;
-	  }
-
-	  h2 { font-size: 22px }
-	h3 { font-size: 20px }
-	/* h2, h3 { font-weight: bold; margin-bottom: 15px; margin-top: 35px; } */
-	pre.prettyprint { font-size: 0.9em; margin-left: 15px; margin-bottom: 10px; padding: 15px; background: #FCFCFC; border: 1px solid #eee }
-	  </style>
-</head>
 <body>
 
-<div id="top"></div>
-<div id="page-wrapper">
+  <div id="wrapper">
+    <div id="header">
+      <h1>
 
-	<div id="header">
-	<div id="site-title">
-		<h1>
-			<a href="/">Ricardo Martins</a>
-			<span class="blurb">on software and madness</span>
-		</h1>
-	</div>
-	<div id="navlist-wrapper">
-		<ul id="navlist">
-			<li><a href="/">archive</a></li>
-			<li><a href="/">about</a></li>
-		</ul>
-	</div>
-	</div>
+		  {% if page.home %}
+		  Ricardo Martins
+		  {% else %}
+		  <a href="/">&larr; Ricardo Martins</a>
+		  {% endif %}
 
-	{% if page.url == "" %}
-	<div id="about">
-		<div style="float:left; padding: 10px 10px 1px 0;">
-			<a href="http://www.flickr.com/photos/ricardo_martins/4075304185/">
-				<img src="/images/me.jpg" width="200" height="130" alt="Me!"/>
-			</a>
-		</div>
-
-		<div id="about-text">
-			<p>Hello there! My name is Ricardo Martins and I'm currently in my third year of Computer Science at <a href="http://www.di.fct.unl.pt">Faculdade de Ciências e Tecnologia &mdash; Universidade Nova de Lisboa.</a></p>
-			<p>You can also find me at <a href="http://twitter.com/meqif" rel="me">twitter</a>, <a href="http://identi.ca/meqif" rel="me">identi.ca</a>, <a href="http://delicious.com/meqif" rel="me">del.icio.us</a>, <a href="http://flickr.com/ricardo_martins" rel="me">flickr</a>, <a href="http://www.librarything.com/profile/meqif" rel="me">librarything</a>, <a href="http://www.last.fm/user/Meqif" rel="me">last.fm</a>, <a href="http://friendfeed.com/meqif" rel="me">friendfeed</a>, <a href="http://www.dopplr.com/traveller/meqif" rel="me">dopplr</a>, and <a href="http://www.linkedin.com/in/ricardompm" rel="me">linkedin</a>.</p>
-			<p>When I'm not reading, I'm probably writing code. Most can be found at <a href="http://github.com/meqif" rel="me">github</a>.</p>
-			<p>I'm currently developing for the Nintendo DS as a hobby, which I'd like to do full time.</p>
-			<p>You should probably take a look at my <a href="/resume.html" rel="me">resume</a> if you're interested in hiring me.</p>
-		</div>
-	</div>
-	{% endif %}
+      </h1>
+      <ul>
+        <li>
+          <a href="/archive">Archive</a>
+        </li>
+        <li>
+          <a href="http://github.com/meqif">Github &rarr;</a>
+        </li>
+        <li>
+          <a href="http://twitter.com/meqif">Twitter &rarr;</a>
+        </li>
+      </ul>
+      <hr/>
+    </div>
 
 	{{ content }}
 
-
 	<div id="footer">
-		<div id="contact">
-			<p>
-				<img style="float: left; margin-top: 0.5em; margin-right: 0.5em;" alt="" src="/images/redmage.png"/>
-				Ricardo Martins
-				<br />
-				Computer Science Student
-				<br />
-				<a href="http://mailhide.recaptcha.net/d?k=01N86GeETDl_T3BFfSz_bhIg==&amp;c=sMQk9aPiKnri8XU2hStEeVu0OCs52lMb5p7eQnIJB40=" id="email" rel="me email">Email me!</a>
-			</p>
-		</div>
-		<div id="rss">
-			<p>
-				<a href="/atom.xml"><img src="/images/feed_icon.png" width="64" height="64" alt="Atom Feed" title="Atom Feed"/></a>
-			</p>
-		</div>
-	</div>
-</div>
+		<a id="feed" href="/atom.xml">
+			<span class="balloon">subscribe!</span> <img src="/images/feed.png"/>
+		</a>
+      <hr/>
+    </div>
+  </div>
 
-{% if page.url != "" %}
-<script type="text/javascript">
-(function() {
-		var links = document.getElementsByTagName('a');
-		var query = '?';
-		for(var i = 0; i < links.length; i++) {
-			if(links[i].href.indexOf('#disqus_thread') >= 0) {
-				query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
-				document.write('<script type="text/javascript" src="http://disqus.com/forums/scarybox/get_num_replies.js' + query + '"></' + 'script>');
-			}
-		}
-	})();
-</script>
-{% endif %}
-<script type="text/javascript" src="/js/prettify.min.js"></script>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-<script type="text/javascript" src="/js/misc.min.js"></script>
+<!--
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+-->
 
-<!-- Woopra Code Start -->
-<script type="text/javascript" src="//static.woopra.com/js/woopra.v2.js"></script>
-<script type="text/javascript">
-woopraTracker.track();
+<script stype="text/javascript">
+  $('#tweet').attr('href', 'http://twitter.com/share?url=' + escape(document.location) + '&via=meqif&text=' + escape(document.title.split(' - ')[0]));
 </script>
-<!-- Woopra Code End -->
-
-<script type="text/javascript">
-var domainy = location.protocol == "https:" ? "https://static.getclicky.com" : "http://static.getclicky.com";
-document.write(unescape("%3Cscript src='" + domainy + "/124525.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<noscript><p><img alt="Clicky" width="1" height="1" src="http://static.getclicky.com/124525-db16.gif" /></p></noscript>
 
 </body>
 </html>

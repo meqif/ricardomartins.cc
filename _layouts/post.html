@@ -1,16 +1,22 @@
 ---
 layout: default
 ---
-<div id="contents">
 <h2>{{ page.title }}</h2>
-<span class="post-topics"><a href="{{ post.url }}#disqus_thread">comments</a> [{% for tag in (page.tags|sort) %} {{ tag }} {% endfor %} ]</span>
-<span class="blurb">{{ page.date | date_to_long_string }}</span>
-<br/>
-<script type="text/javascript">
-	tweetmeme_service = 'bit.ly';
-	tweetmeme_source = 'meqif';
-</script>
-<div id="tweetmeme"><p><script type="text/javascript" src="http://tweetmeme.com/i/scripts/button.js"></script></p></div>
+
+<p class="article_date date">{{ page.date | date: "%d %b %Y" }}</p>
+
+<span id="article_buttons">
+  <a id="tweet" target="_blank">
+    <span class="balloon">tweet!</span> <img src="/images/tweet.png"/>
+  </a>
+  <a href="/atom.xml">
+    <span class="balloon">subscribe!</span> <img src="/images/feed.png"/>
+  </a>
+</span>
+
+<hr/>
+
+<div id="content">
 {{ content }}
 </div>
 
