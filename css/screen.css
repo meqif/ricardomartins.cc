@@ -12,13 +12,11 @@ body
   -o-background-size:100% auto;
   -webkit-background-size:100% auto;
   -webkit-text-size-adjust: none;
-  background-color:#111;
-  /*
+  background-color:#C1DFED;
   background-attachment:fixed;
-  background-image:url('../images/background.jpg');
-  background-position:center;
-  background-size:100% auto;
-  */
+  background-image:url('/images/bg-clouds.png');
+  background-position:top;
+  background-repeat: no-repeat;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
