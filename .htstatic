@@ -34,3 +34,5 @@ RewriteRule (.*) $1.gz [L]
 
 RewriteCond %{HTTP_HOST} !^ricardomartins\.cc$
 RewriteRule (.*) http://ricardomartins.cc/$1 [R=301,L]
+
+ErrorDocument 404 /404.html
