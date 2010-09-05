@@ -3,7 +3,7 @@ layout: default
 ---
 <h2>{{ page.title }}</h2>
 
-<p class="article_date date">{{ page.date | date: "%d %b %Y" }}</p>
+<p class="article_date date"><time datetime="{{ page.date | date_to_xmlschema }}" pubdate>{{ page.date | date: "%d %b %Y" }}</time></p>
 
 <span id="article_buttons">
   <a id="tweet" target="_blank">
