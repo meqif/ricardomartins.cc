@@ -23,7 +23,7 @@
 <body>
 
   <div id="wrapper">
-    <header>
+    <div id="header">
       <h1>
 		  {% if page.home %}
 		  Ricardo Martins
@@ -43,16 +43,16 @@
         </li>
       </ul>
       <hr/>
-    </header>
+    </div>
 
 	{{ content }}
 
-	<footer>
+	<div id="footer">
 		<a id="feed" href="/atom.xml">
 			<span class="balloon">subscribe!</span> <img src="/images/feed.png"/>
 		</a>
       <hr/>
-    </footer>
+    </div>
   </div>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>

@@ -97,30 +97,30 @@ div#content img, div#content object
 }
 
 
-header
+div#header
 {
   font-size:13px;
   margin:0 0 45px;
 }
 
-header ul
+div#header ul
 {
   float:right;
   margin:0;
 }
 
-header li
+div#header li
 {
   float:left;
   margin:0 0 0 20px;
 }
 
-footer
+div#footer
 {
   margin: 50px 0 0 0;
 }
 
-footer a#feed {
+div#footer a#feed{
   float: right;
 }
 
