@@ -124,12 +124,12 @@ footer a#feed {
   float: right;
 }
 
-article
+div.post
 {
   margin:50px 0 0;
 }
 
-article h3,article p
+div.post h3,div.post p
 {
   margin:5px 0;
 }
