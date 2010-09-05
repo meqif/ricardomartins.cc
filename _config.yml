@@ -1,5 +1,5 @@
 markdown: rdiscount
 pygments: true
-haml: true
+exclude: ['resume.html']
 post_defaults:
   layout: post
