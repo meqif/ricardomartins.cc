@@ -6,13 +6,13 @@ home: true
   <h2>Open source enthusiast and Computer Science student @ <a href="http://www.fct.unl.pt"><span id="eff">F</span><span id="cee">C</span><span id="tee">T</span>-UNL</a>, Portugal.</h2>
 
   {% for post in site.posts limit:10 %}
-  <div class="post">
+  <article>
     <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
 	<p class="date">{{ post.date | date: "%d %b %Y" }}</p>
 	{% if post.excerpt %}
 	<p>{{ post.excerpt }}</p>
 	{% endif %}
-  </div>
+  </article>
   {% endfor %}
 
 <p id="footnote">
