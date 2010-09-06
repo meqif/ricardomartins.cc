@@ -1,6 +1,9 @@
 ---
 layout: post
 title: "Snow Leopard calculates disk space in base 10"
+excerpt: "Apple changed the way they present file sizes and disk space from the
+usual base 2 units (1024 bytes per kilobyte) to the base 10 units (1000 bytes
+per kilobyte). Of course I had to rant and rave about this."
 tags:
 - osx
 - nerdrage
