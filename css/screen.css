@@ -26,7 +26,7 @@ h2,h3,h4,h5,h6
   color: #333;
 }
 
-p,h2,h3,h4,h5,h6,ul
+p,h2,h3,h4,h5,h6,ul,time
 {
   margin:20px 0;
 }
@@ -199,7 +199,7 @@ ul.columns
   column-width:215px;
 }
 
-.small, p.date,p#footnote,p#footnote a,del,del a
+.small,time,p#footnote,p#footnote a,del,del a
 {
   color:#888;
 }
@@ -272,8 +272,12 @@ div.dsq-options, div.dsq-sharing-options, div.dsq-dc-logo, div#dsq-global-toolba
   display:none !important;
 }
 
-article p.date{
+article time{
   float:left;
+}
+
+article.excerpt time{
+	float:none;
 }
 
 span#article_buttons{
