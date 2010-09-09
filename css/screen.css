@@ -272,7 +272,7 @@ div.dsq-options, div.dsq-sharing-options, div.dsq-dc-logo, div#dsq-global-toolba
   display:none !important;
 }
 
-p.article_date{
+article p.date{
   float:left;
 }
 
